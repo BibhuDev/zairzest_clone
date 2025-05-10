@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+#home {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+}
+
+.text {
+    font-family: Outfit;
+    font-weight: 650;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    margin-top: 258px;
+    margin-left: 117.71px;
+    width: 503.29px;
+    height: 174px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 48px;
+    letter-spacing: -4%;
+}
+
+.btns{
+    font-family: Outfit;
+    font-weight: 650;
+    position: absolute;
+    top: 14%;
+    left: 5%;
+    margin-top: 258px;
+    margin-left: 117.71px;
+    width:fit-content;
+    
+}
+
+#one{
+    font-family: Outfit;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #38CCFF;
+    padding: 16px 32px 16px 32px;
+    background-color: transparent;
+    color: #38CCFF;
+
+}
+
+#two{
+    font-family: Outfit;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #38CCFF;
+    padding: 16px 32px 16px 32px;
+    background-color: #38CCFF;
+    color: black;
+    margin-left: 16px;
+}
+
+.background2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1157px;
+    padding-left: 140px;
+    
+}
+#panda{
+    height: 460px;
+    width: 350px;
+    top: 117px;
+    left: 200px;
+    display: flex;
+    position: relative;
+}
+
+#pandatxt{
+    font-family: Outfit;
+    font-weight: 700;
+    font-size: 32px;
+    width: 495.09px;
+    height: 106px;
+    margin-left:auto;
+    color: white;
+    letter-spacing: -4%;
+}
+
+#bigtxt{
+    font-family: Outfit;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0px;
+    margin-top: 24px;
+}
+
+.background3{
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#eventsHead{
+    font-family: Outfit;
+    margin-bottom: 20px;
+    margin-top: 190px;
+}
+
+#eventstxt{
+    font-family: Roboto;
+    margin-bottom: 40px;
+    max-width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 38px;
+}
+
+.Events{
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    height: 350px;
+    width: 554px;
+    flex-wrap: wrap;
+}
+
+#ichi{
+    position: relative;
+}
+#ni{
+    position: relative;
+    margin-left: 80px;
+    margin-top: 40px;
+}
