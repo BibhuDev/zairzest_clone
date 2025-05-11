@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Homepage</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,17 +14,18 @@
         <div class="home-container">
             <image src="public/homepage.jpg" id="home"></image>
             <image src="public/Rectangle 887.png" id="gradient"></image>
-            <div class="text">
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="text">
                 <p>Hunt the Future in the Cyber Forest</p>
             </div>
-            <div class="btns">
+            <div data-aos="fade-right" data-aos-offset="250" data-aos-easing="ease-in-sine" class="btns">
                 <button id="one">Explore events</button>
                 <button id="two">Register now</button>
             </div>
         </div>
     </section>
 
-    <section class="panda-section">
+    <section data-aos="fade-up"
+     data-aos-duration="3000" class="panda-section">
         <div class="image-container">
             <img src="public/panda danger.png" />
         </div>
@@ -51,7 +53,7 @@
                     out of the options available.</p>
             </div>
             <div class="image-container">
-                <div class="image-box">
+                <div data-aos="flip-left" class="image-box">
                     <image src="public/photo1.jpg" id="img1"></image>
                     <div class="text-overlay">
                         <h2>Tech events</h2>
@@ -59,7 +61,7 @@
                     </div>
                 </div>
 
-                <div class="image-box">
+                <div data-aos="flip-right" class="image-box">
                     <image src="public/photo2.jpg" id="img2"></image>
                     <div class="text-overlay">
                         <h2>Fun events</h2>
@@ -68,7 +70,10 @@
                 </div>
             </div>
     </section>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
