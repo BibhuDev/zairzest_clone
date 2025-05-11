@@ -7,62 +7,43 @@
 
 body {
     background-color: black;
+    color: white;
 }
 
 #home {
     width: 100vw;
     height: 100vh;
-    display: block;
-}
-
-.background {
+    object-fit: cover;
     position: relative;
-    width: 100%;
+}
+#gradient{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
 }
 
 .text {
     font-family: Outfit;
     font-weight: 650;
     position: absolute;
+    color: white;
+    margin-top: 260px;
+    margin-left: 120px;
     top: 5%;
     left: 5%;
-    margin-top: 258px;
-    margin-left: 117.71px;
-    width: 503.29px;
-    height: 174px;
-    transform: translateY(-50%);
-    color: white;
     font-size: 48px;
     letter-spacing: -4%;
+    width: 503.29px;
+    height: 174px;
 }
 
 .btns {
-    font-family: Outfit;
-    font-weight: 650;
     position: absolute;
-    top: 14%;
+    top: 15%;
     left: 5%;
-    margin-top: 258px;
-    margin-left: 117.71px;
-    width: fit-content;
-}
-
-#one:hover{
-    cursor: pointer;
-    transform: scale(1.05);
-    background-color: #38CCFF;
-    color: #ffffff;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    z-index: 2;
-}
-
-#two:hover{
-    cursor: pointer;
-    transform: scale(1.05);
-    background-color: #ffffff;
-    color: #38CCFF;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    z-index: 2;
+    margin-top: 340px;
+    margin-left: 125px;
 }
 
 #one {
@@ -74,7 +55,6 @@ body {
     padding: 16px 32px 16px 32px;
     background-color: transparent;
     color: #38CCFF;
-
 }
 
 #two {
@@ -85,43 +65,59 @@ body {
     border: 1px solid #38CCFF;
     padding: 16px 32px 16px 32px;
     background-color: #38CCFF;
-    color: black;
+    color: rgb(0, 0, 0);
     margin-left: 16px;
 }
 
-.background2 {
+#one:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #38CCFF;
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#two:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #ffffff;
+    color: #38CCFF;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.panda-section {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 64px 48px;
+    position: relative;
+    margin-left: 80px;
 }
 
-#panda {
+.image-container img {
     height: 460px;
     width: 350px;
-    top: 117px;
-    left: 200px;
-    display: flex;
-    position: relative;
-    margin-left: 40px;
+    margin-top: 60px;
 }
 
-#pandatxt {
+.text-container {
+    max-width: 600px;
+    margin-left: 48px;
+}
+
+.text-container h1 {
     font-family: Outfit;
-    font-weight: 700;
-    font-size: 32px;
     width: 495.09px;
     height: 106px;
-    margin: 280px;
-    color: white;
-    letter-spacing: -4%;
+    font-size: 48px;
+    margin-bottom: 48px;
 }
 
-#bigtxt {
+.text-container p {
     font-family: Outfit;
-    font-weight: 400;
     font-size: 16px;
-    letter-spacing: 0px;
-    margin-top: 24px;
+    line-height: 1.4;
+    color: white;
 }
 
 .container {
@@ -132,7 +128,7 @@ body {
     text-align: center;
     margin-top: 100px;
     color: white;
-    padding: 60px 20px 40px;
+    padding: 0px 20px 40px;
 }
 
 .eventhead {
@@ -157,12 +153,12 @@ body {
     justify-content: center;
     align-items: center;
     margin: 24px 60px 60px;
-    gap: 32px;
+    gap: 42px;
 }
 
 .image-box {
     position: relative;
-    width: 40%;
+    width: 50%;
 }
 
 .image-box img {
@@ -192,7 +188,7 @@ h4{
 
 .image-box:hover{
     cursor: pointer;
-    transform: scale(1.10);
+    transform: scale(1.05);
     transition: ease 0.6s;
     z-index: 2;
 }
