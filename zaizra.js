@@ -1,15 +1,10 @@
-function validateForm() {
+function validateForm(event) {
   event.preventDefault();
+
   const name = document.getElementById("name").value.trim();
   const regno = document.getElementById("regno").value.trim();
   const email = document.getElementById("email").value.trim();
   const password = document.getElementById("password").value.trim();
-  document.getElementById("togglePassword").addEventListener("click", function () {
-    const password = document.getElementById("password");
-    const type = password.getAttribute("type") === "password" ? "text" : "password";
-    password.setAttribute("type", type);
-  });
-
 
   const namePattern = /^[A-Za-z\s]+$/;
   const regPattern = /^\d{8,}$/;
@@ -41,6 +36,7 @@ function validateForm() {
 
   alert("Registration successful!");
 }
+
 
 const passwordInput = document.getElementById("password");
 const toggleEye = document.getElementById("toggleEye");

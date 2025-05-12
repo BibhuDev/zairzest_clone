@@ -36,8 +36,8 @@
                     Sign up to get into Zairzest
                 </div>
             </div>
-            <div class="form">
-
+            <form onsubmit="validateForm(event)">
+              <div class="form">
                 <input type="text" placeholder="Name" id="name" required>
                 <input type="text" placeholder="Registration Number" id="regno" required>
                 <input type="email" placeholder="Email" id="email" required>
@@ -61,13 +61,15 @@
             <div class="bar">
                 
 
-                <button class="signup" onclick="validateForm()">Sign up</button>
+               <button class="signup">Sign up</button>
+
                 <div class="or">OR</div>
                 <button class="goo">Sign up with
                     <img src="google.png" class="icon">
                 </button>
 
             </div>
+            </form>
         </div>
     </div>
     <script src="zaizra.js"></script>

@@ -1,44 +1,45 @@
-function validateForm() {
+document.addEventListener("DOMContentLoaded", function () {
+  const emailInput = document.getElementById("email");
+  const passwordInput = document.getElementById("password");
+  const loginButton = document.getElementById("loginButton");
+  const toggleEye = document.getElementById("toggleEye");
+  const resetPasswordDiv = document.getElementById("resetPassword");
+
+
+  let passwordVisible = false;
+  toggleEye.addEventListener("click", () => {
+    passwordVisible = !passwordVisible;
+    passwordInput.type = passwordVisible ? "text" : "password";
+    toggleEye.src = passwordVisible ? "eye-icon.svg" : "eye-slash.svg";
+  });
+
   
-  const email = document.getElementById("email").value.trim();
-  const password = document.getElementById("password").value.trim();
-  document.getElementById("togglePassword").addEventListener("click", function () {
-  const password = document.getElementById("password");
-  const type = password.getAttribute("type") === "password" ? "text" : "password";
-  password.setAttribute("type", type);
-});
+  resetPasswordDiv.addEventListener("click", () => {
+    alert("Visit Zairza");
+  });
 
-  if ( !email || !password) {
-    alert("All fields are required.");
-    return false;
-  }
-if (!email.includes("@")) {
-    alert("Invalid email address.");
-    return;
-  }
+ 
+  loginButton.addEventListener("click", function (event) {
+    event.preventDefault();
 
-  if (password.length < 6) {
-    alert("Password should be at least 6 characters.");
-    return;
-  }
+    const email = emailInput.value.trim();
+    const password = passwordInput.value.trim();
 
-}
-const passwordInput = document.getElementById("password");
-const toggleEye = document.getElementById("toggleEye");
-
-let passwordVisible = false;
-
-toggleEye.addEventListener("click", () => {
-  passwordVisible = !passwordVisible;
-
-  passwordInput.type = passwordVisible ? "text" : "password";
-  toggleEye.src = passwordVisible ? "eye-icon.svg" : "eye-slash.svg";
-});
- document.addEventListener("DOMContentLoaded", function () {
-    const resetPasswordDiv = document.getElementById("resetPassword");
-    if (resetPasswordDiv) {
-      resetPasswordDiv.addEventListener("click", function () {
-        alert("Visit Zairza");
-      });
+    if (!email || !password) {
+      alert("All fields are required.");
+      return;
     }
-     });
+
+    if (!email.includes("@") || !email.includes(".")) {
+      alert("Invalid email address.");
+      return;
+    }
+
+    if (password.length < 6) {
+      alert("Password should be at least 6 characters.");
+      return;
+    }
+
+    alert("Yesss.. You are successfully logged in!");
+  });
+});
