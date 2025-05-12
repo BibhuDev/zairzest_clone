@@ -1,0 +1,281 @@
+body {
+  background-image: url('image\ 1.jpg');
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("OutfitLight1.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("OutfitRegular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Gilroy-LightItalic";
+  src: url("gilroy-light-italic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("gilroy-medium.ttf") format('truetype');
+}
+
+.format {
+  width: 506px;
+  height: 216px;
+  margin-top: 188px;
+  margin-left: 119px;
+
+}
+
+.text {
+  font-family: Outfit;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -2%;
+  color: rgba(255, 255, 255, 1);
+
+}
+
+.small {
+  width: 400px;
+  height: 57px;
+  margin-top: 20px;
+  margin-left: 119px;
+
+}
+
+.type {
+  font-family: Outfit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: rgba(255, 255, 255, 1);
+}
+
+
+.layout {
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 1);
+  padding: 20px;
+
+}
+
+.home {
+  width: 100%;
+  justify-content: center;
+
+  align-items: center;
+  height: 40px;
+  top: 197px;
+  left: 921px;
+
+}
+
+.zai {
+  font-family: Outfit;
+  font-weight: 600;
+  margin-top: 32%;
+  margin-left: 4%;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  color: rgb(52, 200, 250);
+
+
+}
+
+
+.page {
+  width: 100%;
+  display: flex;
+  left: 921px;
+  top: 200px
+}
+
+.hehe {
+  font-family: Gilroy-LightItalic;
+  font-weight: 400;
+  margin-left: 4%;
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: rgba(133, 133, 133, 1)
+}
+
+.form {
+  width: 79%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 3%;
+
+}
+
+
+
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  font-family: Gilroy;
+  font-size: 20px;
+  color: rgba(147, 147, 147, 1);
+
+}
+
+.bar1 {
+  display: flex;
+  gap: 2px;
+}
+
+.ice {
+  font-family: Outfit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  margin-left: 4%;
+  color: rgba(147, 147, 147, 1);
+
+}
+
+.cream {
+  font-family: Outfit;
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: underline;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: rgba(0, 132, 177, 1);
+
+}
+
+.bar2 {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.hot {
+  font-family: Outfit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  margin-left: 4%;
+  color: rgba(147, 147, 147, 1);
+
+}
+
+.tea {
+  font-family: Outfit;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: rgba(0, 132, 177, 1);
+
+}
+
+.bar {
+  display: flex;
+  gap: 20px;
+  margin-top: 4%;
+  margin-left: 15px;
+
+}
+
+.signup {
+  width: 120.99999237060547px;
+  height: 51.999996185302734px;
+  border-radius: 8px;
+  padding-top: 16px;
+  padding-right: 32px;
+  font-size: 14px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  gap: 12px;
+  border: 2px solid transparent;
+  background-color: rgba(56, 204, 255, 1);
+  cursor: pointer;
+  transition: transform 0.1s ease;
+
+
+}
+
+.signup:active {
+  transform: scale(0.95);
+  transition: transform 0.05s ease;
+}
+
+
+
+.or {
+  margin-top: 3%;
+}
+
+.goo {
+  width: 151.00338745117188px;
+  height: 52px;
+  font-size: 16px;
+  text-align: center;
+  top: 553px;
+  background-color: rgb(255, 255, 255, 1);
+  left: 1094px;
+  border-radius: 8px;
+  border-width: 2px;
+  padding-top: 14px;
+  padding-right: 16px;
+  padding-bottom: 14px;
+  padding-left: 6px;
+  gap: 8px;
+  border: 0.2px solid black;
+  color: rgba(1, 38, 93, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+}
+input[type="password"]::-ms-reveal,
+input[type="password"]::-webkit-credentials-auto-fill-button {
+  display: none !important;
+}
+
+.icon {
+  width: 20.003398895263672px;
+  height: 21.000001907348633px;
+
+
+}
+
+.eye-icon {
+  position: absolute;
+  right: 125px;
+  top: 58.47%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: opacity 0.2s ease;
+}
