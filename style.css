@@ -2,7 +2,6 @@
 body {
   background-image: url('image\ 1.jpg');
 }
-
 @font-face {
   font-family: "Outfit";
   src: url("OutfitLight1.ttf") format('truetype');
@@ -221,6 +220,7 @@ input[type="password"]::-webkit-credentials-auto-fill-button {
 }
 
 .or {
+ 
   margin-top: 17.233px;
 }
 
