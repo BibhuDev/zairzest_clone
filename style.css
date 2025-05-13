@@ -1,5 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url("asset/Gilroy-Bold.ttf") format('opentype');
+}
+
+@media screen and (max-width: 400px) {
+
+.alleve{
+
+    margin-left: 2rem;
+    margin-right: 4rem;
+    width: 22rem;
+    height: 33rem;
+}
+
+.alleve .dig{
+
+     width: 21rem;
+  height: 27rem;
+  
+}
+
+}
+
+@media screen and (max-width:355px){
+
+    .alleve{
+
+    margin-left: 2rem;
+    margin-right: 5.2rem;
+    width: 21rem;
+    height: 32rem;
+}
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -194,6 +230,193 @@ h4{
     transition: ease 0.6s;
     z-index: 2;
 }
+
+.techContent{
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px,1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+    justify-items: center;
+  
+    
+    
+}
+
+.tech {
+     margin-top: 5.625rem;
+    padding-left: 5.5625rem;
+    padding-right: 6.25rem;
+    padding-top: 2rem;
+  color: #ffffff;
+  font-size: 3.125rem;
+  font-family: Outfit;
+  font-weight: 700;
+  display: block;
+ 
+}
+
+.alleve{
+
+    width: 22.5rem;
+    height: 34.375rem;
+    background-color: #1f1f1f;
+    border: 1px solid;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 1.25rem;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 1.25rem;
+    
+    
+    border-radius: 0.625rem;
+    transform-style: preserve-3d;
+    transition: transform 2s;
+    perspective: 1000px;
+    position: relative;
+
+}
+
+.alleve .flip {
+    transform: rotateY('180deg');
+}
+
+.alleve .dig {
+  width: 21.5rem;
+  height: 27.5rem;
+  overflow: hidden;
+  backface-visibility: hidden;
+  
+}
+
+
+
+
+.alleve .dig img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 0.5rem;
+    display: block;
+    border-radius: 5%;
+}
+
+.alleve .digtext {
+    font-family: Outfit;
+   
+    padding-top: 0.75rem;
+    text-align: left;
+    width: 100%;
+    padding-left: 1.125rem;
+      transform: rotateY('180deg');
+    backface-visibility: hidden;
+}
+
+.event{
+
+   
+    font-weight: 600;
+    font-size: 1.1875rem;
+    color: #ffffff;
+      
+}
+
+.when {
+    font-family: Gilroy-Bold;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #C5C5C5;
+    margin-top: 0.625rem;
+}
+
+.details {
+    font-family: Gilroy-Bold;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: #ffffff;
+
+}
+
+
+.bx {
+  font-size: 1.5rem;
+  color: #fff ;
+  visibility: visible ;
+  display: inline-block;
+   position: relative ;
+  z-index: 10;
+  opacity: 1 ;
+  color: rgb(56, 204, 255);
+
+}
+
+.bx:hover{
+    cursor: pointer;
+}
+
+
+.eveline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 18px;
+
+}
+
+
+
+.flip-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.93) 4%, rgb(5, 100, 170)); ;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+ text-align: center;
+ 
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+.flip-content p {
+ 
+  text-align: center;
+  justify-content: center;
+  font-size:  1 rem;
+  font-family: Outfit;
+  color: #ffffff;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+}
+
+.flip-content button {
+
+    margin-top: 1.125rem;
+  padding: 0.6rem 1.2rem;
+  background: rgb(56, 204, 255);
+  color: rgb(0, 0, 0);
+  border-style: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1 rem;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1024px) {
     .text {

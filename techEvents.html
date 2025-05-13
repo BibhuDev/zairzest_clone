@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Events</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"  />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   
+ 
+
+</head>
+<body>
+
+    <div class="eve">
+        <p class="tech">
+            Tech Events
+        </p>
+     </div>
+
+    <div class="techContent">
+     
+
+     <div class="alleve" id="box1">
+      
+       
+        <div class="dig" data-aos="zoom-in-up">
+            <img src="public/537133ce4be68bf58207ad371cfe845aa5b43a72.jpg">
+           
+          </div>
+          
+        <div class="digtext" data-aos="fade-up">
+            <div class="eveline">
+           <p class="event" > Dig The Web </p>
+            <i class='bx bx-info-circle' id="bx1"></i>
+           
+            </div>
+           
+   
+           <p class="when">Date & Time</p>
+           <p class="details">Coming Soon</p>
+        </div>
+
+
+     </div>
+
+     <div class="alleve" id="box2">
+
+        <div class="dig" data-aos="zoom-in-up">
+            <img src="public/fbbb995d9f6d43421ffb8a82b01604af572c6244.jpg">
+        </div>
+
+        <div class="digtext" data-aos="fade-up">
+          <div class="eveline">
+           <p class="event" > CP Rush </p>
+              <i class='bx bx-info-circle' id="bx2"></i>
+           </div>
+          
+
+           <p class="when">Date & Time</p>
+           <p class="details">Coming Soon</p>
+        </div>
+
+
+     </div>
+
+     <div class="alleve" id="box3">
+
+        <div class="dig" data-aos="zoom-in-up">
+            <img src="public/d6e11c73c7ca464affdbc9213c868b2087372785.jpg">
+        </div>
+        
+      
+        <div class="digtext" data-aos="fade-up">
+
+           <div class="eveline">
+           <p class="event" > Robo Sumo </p>
+           <i class='bx bx-info-circle' id="bx3"></i>
+
+           </div>
+     
+          
+
+           <p class="when">Date & Time</p>
+           <p class="details">Coming Soon</p>
+        </div>
+
+
+     </div>
+
+     <div class="alleve" id="box4">
+
+        <div class="dig" data-aos="zoom-in-up">
+            <img src="public/6046d0596e1010da0fe0e2b12eda2b3edd1c4ff1.jpg">
+        </div>
+
+        <div class="digtext" data-aos="fade-up">
+         <div class="eveline">
+           <p class="event" > Ideathon </p>
+            <i class='bx bx-info-circle' id="bx4"></i>
+
+           </div>
+           
+          
+
+           <p class="when">Date & Time</p>
+           <p class="details ">Coming Soon</p>
+        </div>
+
+
+     </div>
+
+     <div class="alleve" id="box5">
+
+        <div class="dig" data-aos="zoom-in-up">
+            <img src="public/87ae9589614745008f5a1f64a59a03fb0ab87eee.jpg">
+        </div>
+
+        <div class="digtext" data-aos="fade-up" >
+         <div class="eveline">
+           <p class="event" > Designation </p>
+            <i class='bx bx-info-circle' id="bx5"></i>
+
+           </div>
+           
+          
+
+           <p class="when">Date & Time</p>
+           <p class="details">Coming Soon</p>
+        </div>
+
+
+     </div>
+
+     
+    </div>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+  <script>
+
+   const eventTexts = {
+
+      1: "<p>In Dig the Web, participants tackle a series of internet-based puzzles within a set time for each. With each round, questions grow in difficulty and time limits increase. The participant with the most correct answers wins the event.</p> ",
+  2: "<p>CP Rush is a competitive programming event where participants face off in fast-paced, 1v1 rounds to solve coding problems against the clock. Winners from each round advance until a final champion emerges. The questions start simple but increase in complexity, demanding quick thinking and coding skills. All you need is a laptop and a focused mind to compete and aim for victory.</p> ",
+  3: "<p>Robo Sumo is an electrifying match where autonomous or remote-controlled robots compete to push each other out of the ring within 5 minutes. Loaner bots are available, so anyone can join. Bring your excitement, and get ready for intense robotic action!</p> ",
+  4: "<p>Ideathon is a collaborative event where teams of 2-3 brainstorm, develop, and pitch innovative ideas to solve a given problem statement. It’s a test of creativity and practicality, with the team presenting the most impactful solution winning the prize</p> ",
+  5: "<p>Designathon is an intense creative competition where participants work in teams to design innovative solutions for real-world problems. Teams will have limited time to brainstorm, develop, and present their ideas using design principles and creativity. The event encourages unique approaches, and the team with the best design solution will take home the prize.</p> ",
+ 
+
+
+   }
+
+     const originalHTML ={};
+
+   for(let i=1; i<=5; i++){
+   const icon= document.querySelector(`#bx${i}`);
+    const box= document.querySelector(`#box${i}`);
+    originalHTML[i] = box.innerHTML;
+    
+   attachIconClick(i);
+   }
+   function attachIconClick(i){ 
+      
+    const icon= document.querySelector(`#bx${i}`);
+    const box= document.querySelector(`#box${i}`);
+
+
+   icon.addEventListener('click', ()=>{
+      box.classList.add('flip');
+      box.innerHTML= `
+       <div class="flip-content">
+         <p>${eventTexts[i]}</p>
+        <button class="close-btn">Close</button>
+      </div>`;
+
+     box.querySelector(".close-btn").addEventListener('click', ()=> {
+      box.classList.remove('flip');
+      box.innerHTML=originalHTML[i];
+
+      attachIconClick(i);
+
+   
+     })
+   } )
+
+   
+ 
+   }
+
+
+
+  </script>
+    
+</body>
+</html>
