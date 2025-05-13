@@ -43,10 +43,7 @@
 
 body {
     background-color: #111111;
-<<<<<<< HEAD
-=======
     color: white;
->>>>>>> e065c70c235541348cf9a62ac9098752c46423a6
 }
 
 #home {
@@ -234,7 +231,6 @@ h4{
     z-index: 2;
 }
 
-<<<<<<< HEAD
 .techContent{
   
     display: grid;
@@ -422,7 +418,6 @@ h4{
 
 
 
-=======
 @media (max-width: 1024px) {
     .text {
         font-size: 36px;
@@ -745,4 +740,3 @@ h4{
     flex-direction: column;
    }
 }
->>>>>>> e065c70c235541348cf9a62ac9098752c46423a6
