@@ -1,7 +1,4 @@
 
-body {
-  background-image: url('image\ 1.jpg');
-}
 @font-face {
   font-family: "Outfit";
   src: url("OutfitLight1.ttf") format('truetype');
@@ -28,6 +25,13 @@ body {
 }
 
 
+.register-body {
+  background-image: url('image\ 1.jpg');
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
 .format {
   width: 506px;
   height: 216px;
@@ -40,18 +44,21 @@ body {
   font-family: Outfit;
   font-weight: 700;
   font-size: 60px;
-  line-height: 72px;
   letter-spacing: -2%;
   color: rgba(255, 255, 255, 1);
 
 }
 
 .small {
-  width: 400px;
-  height: 57px;
-  margin-top: 20px;
-  margin-left: 119px;
-
+  height: 8rem;
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 9%;
 }
 
 .type {
@@ -308,26 +315,14 @@ body {
     object-fit: cover;
     position: relative;
 }
-#gradient{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 0%;
-}
 
-.text {
+.home-text {
     font-family: Outfit;
     font-weight: 650;
-    position: absolute;
     color: white;
-    margin-top: 260px;
-    margin-left: 120px;
-    top: 5%;
-    left: 5%;
     font-size: 48px;
     letter-spacing: -4%;
-    width: 503.29px;
-    height: 174px;
+
 }
 
 .btns {
@@ -517,7 +512,7 @@ h4{
     width: 22.5rem;
     height: 34.375rem;
     background-color: #1f1f1f;
-    border: 1px solid;
+    border: 1px solid #1f1f1f;
     display: flex; 
     flex-direction: column;
     justify-content: flex-start;
@@ -675,12 +670,6 @@ h4{
 
 
 @media (max-width: 1024px) {
-    .text {
-        font-size: 36px;
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 200px;
-    }
 
     .btns {
         margin-top: 300px;
