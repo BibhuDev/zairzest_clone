@@ -12,6 +12,58 @@
 </head>
 <body>
 
+   
+   <div class="navbar">
+        <div class="left-text-div">
+            <a href="zairzest.html" target="_blank" style="color: inherit; text-decoration: none;">
+                <div class="left-text">
+                        <p id="zairzest">Zairzest </p>
+                        <p id="fourO">4.0</p>
+                </div>
+            </a>
+        </div>
+        <div class="right-text-div">
+            <div class="right-text">
+                <a href="about.html" target="_blank" style="color: inherit; text-decoration: none;">
+                    <h4>About Us</h4>
+                </a>
+                <h4>Register</h4>
+                <h4>Sign In</h4>
+            </div>
+            <div class="ham-icon" onclick="toggleSidebar()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('open');
+        }
+    </script>
+
+    <div class="sidebar" id="sidebar">
+        <div class="close-icon" onclick="toggleSidebar()">
+            <i class="fa-solid fa-xmark" style="color: white;"></i>
+        </div>
+        <div class="nav-btn-content-container">
+            <div class="nav-btn-content">
+                <a href="about.html" target="_blank" style="color: inherit; text-decoration: none;">
+                    <h4>About Us</h4>
+                </a>
+                <h4>Register</h4>
+                <h4>Sign In</h4>
+            </div>
+        </div>
+        <div class="zairza-img">
+            <img src="asset/zairza-full-logo.webp" alt="Description of image">
+        </div>
+    </div>
+
+
+
+
     <div class="eve">
         <p class="tech">
             Fun Events
@@ -154,6 +206,54 @@
      </div>
 
      
+    </div>
+
+    <div class="footer">
+        <div class="want-to">
+            <h1>Want to Know about us ?</h1>
+        </div>
+        <div class="middle-footer">
+            <p id="know-more">Come and know more about Zairza and join our community to experience such more amazing stuffs.</p>
+            <div class="middle-footer-icons">
+                <div class="icon 1">
+                    <a href="https://www.facebook.com/zairza.cetb" target="_blank" style="color: inherit; text-decoration: none;">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="icon 2">
+                    <a href="https://mobile.x.com/zairza_outr" target="_blank" style="color: inherit; text-decoration: none;">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+                <div class="icon 3">
+                    <a href="https://www.youtube.com/@zairzarobosofdescluboutrb1825" target="_blank" style="color: inherit; text-decoration: none;">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+                <div class="icon 4">
+                    <a href="mailto:cet.sac.zairza@gmail.com" target="_blank" style="color: inherit; text-decoration: none;">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="icon 5">
+                    <a href="https://www.instagram.com/zairza.outr/" target="_blank" style="color: inherit; text-decoration: none;">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="icon 6">
+                    <a href="https://www.linkedin.com/company/zairza/posts/?feedView=all" target="_blank" style="color: inherit; text-decoration: none;">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <p id="btm">OUTR (CET Campus), Kalinga Nagar, Ghatikia, Bhubaneswar, Odisha. +91 8984344805</p>
+            <div class="bottom-footer-icon">
+                <i>Presented by</i>
+                <img id="zairza-logo" src="asset/Group 147.svg">
+            </div>
+        </div>
     </div>
 
      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

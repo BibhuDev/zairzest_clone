@@ -495,10 +495,10 @@ h4{
 }
 
 .tech {
-     margin-top: 5.625rem;
+     
     padding-left: 5.5625rem;
     padding-right: 6.25rem;
-    padding-top: 2rem;
+    padding-top: 6rem;
   color: #ffffff;
   font-size: 3.125rem;
   font-family: Outfit;
@@ -520,8 +520,7 @@ h4{
     align-items: center;
     overflow: hidden;
     margin-left: 1.25rem;
-    
-    
+    border: #111111;
     border-radius: 0.625rem;
     transform-style: preserve-3d;
     transition: transform 2s;
