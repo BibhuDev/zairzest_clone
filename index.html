@@ -40,12 +40,6 @@
             </div>
         </div>
     </div>
-    <script>
-        function toggleSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.classList.toggle('open');
-        }
-    </script>
 
     <div class="sidebar" id="sidebar">
         <div class="close-icon" onclick="toggleSidebar()">
@@ -69,11 +63,9 @@
     <section>
         <div class="home-container">
             <image src="public/homepage.jpg" id="home"></image>
-            <image src="public/Rectangle 887.png" id="gradient"></image>
-            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="text">
+            <!-- <image src="public/Rectangle 887.png" id="gradient"></image> -->
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="home-text">
                 <p>Hunt the Future in the Cyber Forest</p>
-            </div>
-            <div data-aos="fade-right" data-aos-offset="250" data-aos-easing="ease-in-sine" class="btns">
                 <button id="one">Explore events</button>
                 <button id="two">Register now</button>
             </div>
@@ -83,7 +75,7 @@
     <section data-aos="fade-up"
      data-aos-duration="3000" class="panda-section">
         <div class="image-container">
-            <img src="public/panda danger.png" />
+            <img src="public/panda danger.png"/>
         </div>
         <div class="text-container">
             <h1><span style="color: #38CCFF;">Zen 4.0 : </span>Your Guide in The Cyber Wild!</h1>
@@ -126,10 +118,6 @@
                 </div>
             </div>
     </section>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 
     <div class="footer">
         <div class="want-to">
@@ -179,6 +167,19 @@
         </div>
     </div>
    
+
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('open');
+        }
+    </script>
 </body>
 
 </html>

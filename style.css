@@ -1,4 +1,303 @@
+
+@font-face {
+  font-family: "Outfit";
+  src: url("OutfitLight1.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("OutfitRegular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Gilroy-LightItalic";
+  src: url("gilroy-light-italic.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("gilroy-medium.ttf") format('truetype');
+}
+
+.signup:active {
+  transform: scale(0.95);
+  transition: transform 0.05s ease;
+}
+
+
+.register-body {
+  background-image: url('image\ 1.jpg');
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+.format {
+  width: 506px;
+  height: 216px;
+  margin-top: 188px;
+  margin-left: 119px;
+
+}
+
+.text {
+  font-family: Outfit;
+  font-weight: 700;
+  font-size: 60px;
+  letter-spacing: -2%;
+  color: rgba(255, 255, 255, 1);
+
+}
+
+.small {
+  height: 8rem;
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 9%;
+}
+
+.type {
+  font-family: Outfit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: rgba(255, 255, 255, 1);
+}
+
+
+.layout {
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 1);
+  padding: 20px;
+
+}
+
+.home {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  top: 197px;
+  left: 921px;
+}
+
+
+.zai {
+  font-family: Outfit;
+  font-weight: 600;
+  margin-top: 11%;
+  font-size: 40px;
+  margin-left: 2%;
+  line-height: 40px;
+  letter-spacing: 0%;
+  color: rgb(52, 200, 250);
+
+
+}
+
+.page {
+  width: 100%;
+  display: flex;
+  height: 20px;
+  left: 921px;
+  top: 200px;
+}
+
+.hehe {
+  font-family: Gilroy-LightItalic;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-left: 2%;
+  letter-spacing: 0%;
+  color: rgba(133, 133, 133, 1)
+}
+
+
+.form {
+  width: 79%;
+  height: 22.33vh;
+  gap: 20px;
+  display: flex;
+  margin-top: 0%;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(255, 255, 255, 1);
+  margin-left: 0%;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+
+  font-family: Gilroy;
+  font-size: 20px;
+  color: rgba(147, 147, 147, 1);
+
+}
+input[type="password"]::-ms-reveal,
+input[type="password"]::-webkit-credentials-auto-fill-button {
+  display: none !important;
+}
+
+
+.eye-icon {
+  position: absolute;
+  right: 125px;
+  top: 56.47%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: opacity 0.2s ease;
+}
+
+
+.main {
+  display: flex;
+  margin-top: 15%;
+  margin-left: 15px;
+}
+
+.sub {
+
+  font-family: Gilroy-LightItalic;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0%;
+
+}
+
+.mew {
+  font-family: Gilroy-LightItalic;
+  font-weight: 400;
+  font-style: italic;
+  margin-left: 6px;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: rgba(0, 132, 177, 1);
+
+
+
+}
+
+.bar {
+  display: flex;
+  gap: 20px;
+  margin-top: 4%;
+  margin-left: 15px;
+
+}
+
+.signup {
+  width: 120.99999237060547px;
+  height: 51.999996185302734px;
+  border-radius: 8px;
+  padding-top: 16px;
+  padding-right: 32px;
+  font-size: 14px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  gap: 12px;
+  border: 2px solid transparent;
+  background-color: rgba(56, 204, 255, 1);
+
+
+}
+
+.or {
+ 
+  margin-top: 17.233px;
+}
+
+.goo {
+  width: 151.00338745117188px;
+  height: 52px;
+  font-size: 16px;
+  text-align: center;
+  top: 553px;
+  background-color: rgb(255, 255, 255, 1);
+  left: 1094px;
+  border-radius: 8px;
+  border-width: 2px;
+  padding-top: 14px;
+  padding-right: 16px;
+  padding-bottom: 14px;
+  padding-left: 6px;
+  gap: 8px;
+  border: 0.2px solid black;
+  color: rgba(1, 38, 93, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+}
+
+.icon {
+  width: 20.003398895263672px;
+  height: 21.000001907348633px;
+
+
+}
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url("asset/Gilroy-Bold.ttf") format('opentype');
+}
+
+@media screen and (max-width: 400px) {
+
+.alleve{
+
+    margin-left: 2rem;
+    margin-right: 4rem;
+    width: 22rem;
+    height: 33rem;
+}
+
+.alleve .dig{
+
+     width: 21rem;
+  height: 27rem;
+  
+}
+
+}
+
+@media screen and (max-width:355px){
+
+    .alleve{
+
+    margin-left: 2rem;
+    margin-right: 5.2rem;
+    width: 21rem;
+    height: 32rem;
+}
+}
+
 
 * {
     padding: 0;
@@ -16,26 +315,14 @@ body {
     object-fit: cover;
     position: relative;
 }
-#gradient{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 0%;
-}
 
-.text {
+.home-text {
     font-family: Outfit;
     font-weight: 650;
-    position: absolute;
     color: white;
-    margin-top: 260px;
-    margin-left: 120px;
-    top: 5%;
-    left: 5%;
     font-size: 48px;
     letter-spacing: -4%;
-    width: 503.29px;
-    height: 174px;
+
 }
 
 .btns {
@@ -195,13 +482,193 @@ h4{
     z-index: 2;
 }
 
+.techContent{
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px,1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+    justify-items: center;
+  
+    
+    
+}
+
+.tech {
+     
+    padding-left: 5.5625rem;
+    padding-right: 6.25rem;
+    padding-top: 6rem;
+  color: #ffffff;
+  font-size: 3.125rem;
+  font-family: Outfit;
+  font-weight: 700;
+  display: block;
+ 
+}
+
+.alleve{
+
+    width: 22.5rem;
+    height: 34.375rem;
+    background-color: #1f1f1f;
+    border: 1px solid #1f1f1f;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 1.25rem;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 1.25rem;
+    border: #111111;
+    border-radius: 0.625rem;
+    transform-style: preserve-3d;
+    transition: transform 2s;
+    perspective: 1000px;
+    position: relative;
+
+}
+
+.alleve .flip {
+    transform: rotateY('180deg');
+}
+
+.alleve .dig {
+  width: 21.5rem;
+  height: 27.5rem;
+  overflow: hidden;
+  backface-visibility: hidden;
+  
+}
+
+
+
+
+.alleve .dig img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 0.5rem;
+    display: block;
+    border-radius: 5%;
+}
+
+.alleve .digtext {
+    font-family: Outfit;
+   
+    padding-top: 0.75rem;
+    text-align: left;
+    width: 100%;
+    padding-left: 1.125rem;
+      transform: rotateY('180deg');
+    backface-visibility: hidden;
+}
+
+.event{
+
+   
+    font-weight: 600;
+    font-size: 1.1875rem;
+    color: #ffffff;
+      
+}
+
+.when {
+    font-family: Gilroy-Bold;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #C5C5C5;
+    margin-top: 0.625rem;
+}
+
+.details {
+    font-family: Gilroy-Bold;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: #ffffff;
+
+}
+
+
+.bx {
+  font-size: 1.5rem;
+  color: #fff ;
+  visibility: visible ;
+  display: inline-block;
+   position: relative ;
+  z-index: 10;
+  opacity: 1 ;
+  color: rgb(56, 204, 255);
+
+}
+
+.bx:hover{
+    cursor: pointer;
+}
+
+
+.eveline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 18px;
+
+}
+
+
+
+.flip-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.93) 4%, rgb(5, 100, 170)); ;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+ text-align: center;
+ 
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+.flip-content p {
+ 
+  text-align: center;
+  justify-content: center;
+  font-size:  1 rem;
+  font-family: Outfit;
+  color: #ffffff;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+}
+
+.flip-content button {
+
+    margin-top: 1.125rem;
+  padding: 0.6rem 1.2rem;
+  background: rgb(56, 204, 255);
+  color: rgb(0, 0, 0);
+  border-style: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1 rem;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1024px) {
-    .text {
-        font-size: 36px;
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 200px;
-    }
 
     .btns {
         margin-top: 300px;
@@ -518,6 +985,7 @@ h4{
    }
 }
 
+<<<<<<< HEAD
 .about-us{
     display: flex;
     justify-content: center;
@@ -563,3 +1031,5 @@ h4{
     object-fit: cover;
     display: block;
 }
+=======
+>>>>>>> 4d755fc3e2d4117486a7b791147ae52d2741321f
