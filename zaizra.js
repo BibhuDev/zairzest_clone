@@ -11,7 +11,7 @@ function validateForm(event) {
 
   if (!name || !regno || !email || !password) {
     alert("All fields are required.");
-    return false;
+    return;
   }
 
   if (!namePattern.test(name)) {
