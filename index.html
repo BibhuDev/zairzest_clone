@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Homepage</title>
     <link rel="stylesheet" href="style.css">
     <!-- font awesome -->
@@ -66,51 +67,69 @@
 
 
     <section>
-        <div class="background">
+        <div class="home-container">
             <image src="public/homepage.jpg" id="home"></image>
-            <div class="text">Hunt the Future in the Cyber Forest</div>
-            <div class="btns">
+            <image src="public/Rectangle 887.png" id="gradient"></image>
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="text">
+                <p>Hunt the Future in the Cyber Forest</p>
+            </div>
+            <div data-aos="fade-right" data-aos-offset="250" data-aos-easing="ease-in-sine" class="btns">
                 <button id="one">Explore events</button>
                 <button id="two">Register now</button>
             </div>
         </div>
     </section>
 
-    <section>
-        <div class="background2">
-            <image src="public/panda danger.png" id="panda"></image>
-            <div id="pandatxt">
-                <h1><span style="color: #38CCFF;"> Zen 4.0:</span> Your Guide in The Cyber Wild!</h1>
-                <p id="bigtxt">‘To forge the future, we must first innovate it.’ As we move beyond our journey through
-                    the tech
-                    wilderness, we welcome you to the dynamic metropolis of technology. Embark with us as we traverse
-                    the cutting-edge neighborhoods of Cybercity, exploring diverse tech ecosystems, development
-                    pathways, recursion, data structures, and languages such as Python and Firefox. The most exciting
-                    revelations are still to come. Stay tuned for groundbreaking experiences ahead!</p>
-            </div>
+    <section data-aos="fade-up"
+     data-aos-duration="3000" class="panda-section">
+        <div class="image-container">
+            <img src="public/panda danger.png" />
+        </div>
+        <div class="text-container">
+            <h1><span style="color: #38CCFF;">Zen 4.0 : </span>Your Guide in The Cyber Wild!</h1>
+            <p>
+                ‘To forge the future, we must first innovate it.’ As we move beyond our journey through the tech
+                wilderness,
+                we welcome you to the dynamic metropolis of technology. Embark with us as we traverse the cutting–edge
+                neighborhoods of Cybercity, exploring diverse tech ecosystems, development pathways, recursion,
+                data structures, and languages such as Python and Firefox. The most exciting revelations are still to
+                come.
+                Stay tuned for groundbreaking experiences ahead!
+            </p>
         </div>
     </section>
 
     <section>
-        <div class="background3">
-            <div id="eventsHead">
-                <h1 style="color: #38CCFF; font-size: 48px;">Events for you</h1>
+        <div class="container">
+            <div class="eventhead">
+                <h1><span style="color: #38CCFF;">Events for you</span></h1>
             </div>
-            <div id="eventsbody">
-                </p id="eventstxt"><i>Everything has been made simple for you to scroll around and get the most out of the options
-                    available.</i></p>
-                <image src="public/photo1.jpg" class="Events" id="ichi"></image>
-                <h2>Tech Events</h2>
-                <h3>Click to view</h3>
-                <image src="public/photo2.jpg" class="Events" id="ni"></image>
-                <h2>Fun Events</h2>
-                <h3>Click to view</h3>
+            <div class="eventtxt">
+                <p>Everything has been made simple for you to scroll around and get the most
+                    out of the options available.</p>
             </div>
-            <div>
-                
+            <div class="image-container">
+                <div data-aos="flip-left" data-aos-duration="500" class="image-box">
+                    <image src="public/photo1.jpg" id="img1"></image>
+                    <div class="text-overlay">
+                        <h2>Tech events</h2>
+                        <h4>Click to view</h4>
+                    </div>
+                </div>
+
+                <div data-aos="flip-right" data-aos-duration="500" class="image-box">
+                    <image src="public/photo2.jpg" id="img2"></image>
+                    <div class="text-overlay">
+                        <h2>Fun events</h2>
+                        <h4>Click to view</h4>
+                    </div>
+                </div>
             </div>
-        </div>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <div class="footer">
         <div class="want-to">

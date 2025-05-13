@@ -1,55 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     padding: 0;
     margin: 0;
 }
 
-body{
-    background-color: black;
+body {
+    background-color: #111111;
+    color: white;
 }
 
 #home {
     width: 100vw;
     height: 100vh;
-    display: block;
-}
-
-.background {
+    object-fit: cover;
     position: relative;
-    width: 100%;
+}
+#gradient{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
 }
 
 .text {
     font-family: Outfit;
     font-weight: 650;
     position: absolute;
+    color: white;
+    margin-top: 260px;
+    margin-left: 120px;
     top: 5%;
     left: 5%;
-    margin-top: 258px;
-    margin-left: 117.71px;
-    width: 503.29px;
-    height: 174px;
-    transform: translateY(-50%);
-    color: white;
     font-size: 48px;
     letter-spacing: -4%;
+    width: 503.29px;
+    height: 174px;
 }
 
-.btns{
-    font-family: Outfit;
-    font-weight: 650;
+.btns {
     position: absolute;
-    top: 14%;
+    top: 15%;
     left: 5%;
-    margin-top: 258px;
-    margin-left: 117.71px;
-    width:fit-content;
-    
+    margin-top: 340px;
+    margin-left: 125px;
 }
 
-#one{
+#one {
     font-family: Outfit;
     font-weight: 700;
     font-size: 16px;
@@ -58,10 +55,9 @@ body{
     padding: 16px 32px 16px 32px;
     background-color: transparent;
     color: #38CCFF;
-
 }
 
-#two{
+#two {
     font-family: Outfit;
     font-weight: 700;
     font-size: 16px;
@@ -69,83 +65,233 @@ body{
     border: 1px solid #38CCFF;
     padding: 16px 32px 16px 32px;
     background-color: #38CCFF;
-    color: black;
+    color: rgb(0, 0, 0);
     margin-left: 16px;
 }
 
-.background2{
+#one:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #38CCFF;
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#two:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #ffffff;
+    color: #38CCFF;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.panda-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1157px;
-    padding-left: 140px;
-    
-}
-#panda{
-    height: 460px;
-    width: 350px;
-    top: 117px;
-    left: 200px;
-    display: flex;
+    padding: 64px 48px;
     position: relative;
+    margin-left: 80px;
 }
 
-#pandatxt{
+.image-container img {
+    height: 460px;
+    width: 350px;
+    margin-top: 60px;
+}
+
+.text-container {
+    max-width: 600px;
+    margin-left: 48px;
+}
+
+.text-container h1 {
     font-family: Outfit;
-    font-weight: 700;
-    font-size: 32px;
     width: 495.09px;
     height: 106px;
-    margin-left:auto;
+    font-size: 48px;
+    margin-bottom: 48px;
+}
+
+.text-container p {
+    font-family: Outfit;
+    font-size: 16px;
+    line-height: 1.4;
     color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    padding: 0px 20px 40px;
+}
+
+.eventhead {
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 24px;
     letter-spacing: -4%;
 }
 
-#bigtxt{
+.eventtxt {
     font-family: Outfit;
+    font-style: italic;
     font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0px;
-    margin-top: 24px;
+    font-size: 14px;
+    margin-bottom: 24px;
+    width: 460px;
 }
 
-.background3{
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-}
-
-#eventsHead{
-    font-family: Outfit;
-    margin-bottom: 20px;
-    margin-top: 190px;
-}
-
-#eventstxt{
-    font-family: Roboto;
-    margin-bottom: 40px;
-    max-width: 390px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 38px;
-}
-
-.Events{
+.image-container {
     display: flex;
     justify-content: center;
-    display: inline-block;
-    height: 350px;
-    width: 554px;
-    flex-wrap: wrap;
+    align-items: center;
+    margin: 0px 60px 60px;
+    gap: 38px;
 }
 
-#ichi{
+.image-box {
     position: relative;
+    width: auto;
+    max-width: 500px;
 }
-#ni{
-    position: relative;
-    margin-left: 80px;
-    margin-top: 40px;
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 12%;
+    left: 10%;
+    font-family: Outfit;
+    color: white;
+    
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h4{
+    font-size: 14px;
+    margin-right: 80px;
+    font-weight: 500;
+}
+
+.image-box:hover{
+    cursor: pointer;
+    transform: scale(1.05) !important;
+    transition: ease 0.6s;
+    z-index: 2;
+}
+
+@media (max-width: 1024px) {
+    .text {
+        font-size: 36px;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 200px;
+    }
+
+    .btns {
+        margin-top: 300px;
+        margin-left: 5%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .panda-section {
+        flex-direction: column;
+        margin-left: 0;
+        text-align: center;
+        padding: 48px 24px;
+    }
+
+    .text-container {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .text-container h1 {
+        font-size: 36px;
+        width: 100%;
+    }
+
+    .eventtxt {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .image-container {
+        flex-direction: column;
+        gap: 24px;
+        margin: 0;
+    }
+
+    .text-overlay {
+        font-size: 14px;
+        left: 5%;
+    }
+}
+
+@media (max-width: 600px) {
+    .text {
+        font-size: 28px;
+        margin-top: 150px;
+        width: 90%;
+    }
+
+    .btns {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 260px;
+        margin-left: 5%;
+    }
+
+    #one,
+    #two {
+        width: 100%;
+        padding: 12px;
+        margin-left: 0 !important;
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+
+    .image-container img {
+        width: 90%;
+        height: auto;
+    }
+
+    .text-container h1 {
+        font-size: 28px;
+    }
+
+    .eventhead {
+        font-size: 24px;
+    }
+
+    .eventtxt {
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 12px;
+        margin-right: 0;
+    }
 }
 
 
