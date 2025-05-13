@@ -38,14 +38,22 @@ body {
   top: 42.5px;
   left: 59.47px;
   border-radius: 12px;
-  background-color: rgba(255, 255, 255, 1);
-
+  background-color: #111111;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: Outfit;
 }
+
+
 .iced {
   position: absolute;
-  top: 290px; 
+  top: 290px;
   width: 100%;
   text-align: center;
+  margin-top: 10px;
 }
 
 .latte {
@@ -56,7 +64,7 @@ body {
   line-height: 110.00000000000001%;
   letter-spacing: 0%;
   text-align: center;
-color:  rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 
 
 }
@@ -70,5 +78,4 @@ color:  rgba(255, 255, 255, 1);
   letter-spacing: 0%;
   text-align: center;
   color: rgba(56, 204, 255, 1);
-
 }
