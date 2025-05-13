@@ -322,7 +322,9 @@ body {
     color: white;
     font-size: 48px;
     letter-spacing: -4%;
-
+    margin-left: 8rem;
+    margin-top: -30rem;
+    position: absolute;
 }
 
 .btns {
@@ -382,8 +384,6 @@ body {
 }
 
 .image-container img {
-    height: 460px;
-    width: 350px;
     margin-top: 60px;
 }
 
@@ -489,9 +489,6 @@ h4{
     gap: 1.5rem;
     padding: 1.5rem;
     justify-items: center;
-  
-    
-    
 }
 
 .tech {
@@ -658,13 +655,6 @@ h4{
   font-size: 1 rem;
   font-weight: 600;
 }
-
-
-
-
-
-
-
 
 
 
@@ -985,7 +975,6 @@ h4{
    }
 }
 
-<<<<<<< HEAD
 .about-us{
     display: flex;
     justify-content: center;
@@ -1031,5 +1020,3 @@ h4{
     object-fit: cover;
     display: block;
 }
-=======
->>>>>>> 4d755fc3e2d4117486a7b791147ae52d2741321f
