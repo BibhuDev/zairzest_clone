@@ -148,5 +148,49 @@
             </div>
         </div>
     </div>
+
+    <div class="music-player">
+    <audio loop src="asset/darkside.mp3" id="main-audio" > </audio>
+
+    <div class="wcircle">
+    <div class="circle-wave"></div>
+    <div class="circle-wave"></div>
+    <div class="circle-wave"></div>
+    </div>
+
+    <div class="mainicon" id="playButton" >
+
+        <i class="fa fa-play" id="playIcon"></i>
+    </div>
+
+    <script>
+       const button= document.getElementById('playButton');
+       const audio= document.getElementById('main-audio');
+       const play= document.getElementById('playIcon');
+       const circle = document.querySelectorAll('.circle-wave')
+       
+
+       let isplaying = false;
+
+       play.addEventListener('click',() => {
+
+        isplaying=!isplaying; 
+
+        if(isplaying){
+            audio.play();
+            play.classList.replace('fa-play','fa-pause');
+            circle.forEach((wave)=>wave.classList.add('active'));
+
+        }
+        else {
+            audio.pause();
+            play.classList.replace('fa-pause', 'fa-play');
+             circle.forEach((wave)=>wave.classList.remove('active'));
+        }
+
+       })
+        
+    </script>
+
 </body>
 </html>
