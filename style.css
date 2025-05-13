@@ -43,10 +43,7 @@
 
 body {
     background-color: #111111;
-<<<<<<< HEAD
-=======
     color: white;
->>>>>>> e065c70c235541348cf9a62ac9098752c46423a6
 }
 
 #home {
@@ -234,7 +231,6 @@ h4{
     z-index: 2;
 }
 
-<<<<<<< HEAD
 .techContent{
   
     display: grid;
@@ -248,10 +244,10 @@ h4{
 }
 
 .tech {
-     margin-top: 5.625rem;
+     
     padding-left: 5.5625rem;
     padding-right: 6.25rem;
-    padding-top: 2rem;
+    padding-top: 6rem;
   color: #ffffff;
   font-size: 3.125rem;
   font-family: Outfit;
@@ -273,8 +269,7 @@ h4{
     align-items: center;
     overflow: hidden;
     margin-left: 1.25rem;
-    
-    
+    border: #111111;
     border-radius: 0.625rem;
     transform-style: preserve-3d;
     transition: transform 2s;
@@ -422,7 +417,6 @@ h4{
 
 
 
-=======
 @media (max-width: 1024px) {
     .text {
         font-size: 36px;
@@ -745,4 +739,3 @@ h4{
     flex-direction: column;
    }
 }
->>>>>>> e065c70c235541348cf9a62ac9098752c46423a6
