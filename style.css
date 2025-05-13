@@ -56,7 +56,7 @@
   flex-direction: column;
   gap: 2rem;
   position: absolute;
-  top: 50%;
+  top: 35%;
   transform: translateY(-50%);
   left: 9%;
 }
@@ -183,6 +183,8 @@ input[type="password"]::-webkit-credentials-auto-fill-button {
   font-weight: 400;
   font-style: italic;
   font-size: 18px;
+  color: rgba(147, 147, 147, 1);
+
   line-height: 20px;
   letter-spacing: 0%;
 
@@ -210,9 +212,9 @@ input[type="password"]::-webkit-credentials-auto-fill-button {
 
 }
 
-.signup {
-  width: 120.99999237060547px;
-  height: 51.999996185302734px;
+.pika {
+  width: 100.99999237060547px;
+  height: 18.999996185302734px;
   border-radius: 8px;
   padding-top: 16px;
   padding-right: 32px;
@@ -220,14 +222,26 @@ input[type="password"]::-webkit-credentials-auto-fill-button {
   padding-bottom: 16px;
   padding-left: 32px;
   gap: 12px;
+  display: flex;
   border: 2px solid transparent;
   background-color: rgba(56, 204, 255, 1);
-
+justify-content: center;
+align-items: center;
 
 }
-
+.signup{
+    font-family: Gilroy-SemiBold;
+font-weight: 400;
+font-size: 20px;
+line-height: 100%;
+margin-left: 5%;
+letter-spacing: 0%;
+color: #000;
+}
 .or {
- 
+
+ color: rgba(168, 168, 168, 1);
+
   margin-top: 17.233px;
 }
 
@@ -255,7 +269,7 @@ input[type="password"]::-webkit-credentials-auto-fill-button {
 
 }
 
-.icon {
+.icong {
   width: 20.003398895263672px;
   height: 21.000001907348633px;
 

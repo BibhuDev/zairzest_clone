@@ -40,6 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    alert("Yesss.. You are successfully logged in!");
+  
   });
 });

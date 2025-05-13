@@ -24,7 +24,7 @@ function validateForm(event) {
     return;
   }
 
-  if (!email.includes("@")) {
+  if (!email.includes("@") || !email.includes(".")) {
     alert("Invalid email address.");
     return;
   }
@@ -34,7 +34,7 @@ function validateForm(event) {
     return;
   }
 
-  alert("Registration successful!");
+
 }
 
 
