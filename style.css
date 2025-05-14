@@ -1274,13 +1274,61 @@ h2{
     width: 100%;
     padding: 2rem;
   }
+
+  .eye-icon{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 700px) {
-  .eye-icon{
+  .sub{
+    margin-top: 4rem;
+  }
 
+  .mew{
+    margin-top: 4rem;
+  }
+
+    .register-body {
+    margin-left: 49px;
+  }
+
+  .zai{
+    font-size: 30px;
+  }
+
+  .goo{
+    width: 7.5rem;
+  }
+
+  .bar{
+    margin-top: 3rem;
   }
 }
+
+@media screen and (max-width: 1350px) and (min-width: 1020px){
+
+  .sub{
+    margin-top: 4rem;
+  }
+
+  .mew{
+    margin-top: 4rem;
+  }
+
+  .goo{
+    width: 7.5rem;
+  }
+
+  .bar{
+    margin-top: 3rem;
+  }
+
+  .eye-icon{
+    display: none;
+  }
+}
+
 
 
   
