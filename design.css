@@ -272,6 +272,21 @@ input {
   border-color: white !important;
   color: white !important;
 }
+.swal2-popup.success-toast {
+  width: 600px;
+  height: 90px;
+  font-size: 18px;
+  background-color: #2e7d32; 
+  display: flex;
+  font-family: OutfitB;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+
 
 
 .or {

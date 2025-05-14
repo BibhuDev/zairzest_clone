@@ -58,7 +58,6 @@ resetPasswordDiv.addEventListener("click", () => {
 
     const email = emailInput.value.trim();
     const password = passwordInput.value.trim();
-
     
 
   if (!email || !password) {
@@ -76,8 +75,23 @@ if (password.length < 6) {
   return;
 }
 
-
-
-  
+Swal.fire({
+    icon: 'success',
+    title: 'Login Successful!',
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    customClass: {
+       popup: 'success-toast'
+    }
   });
+
+
+  setTimeout(() => {
+    window.location.href = "index.html"; // change this if needed
+  }, 3000);
+});
+
 });

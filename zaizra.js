@@ -50,8 +50,25 @@ function validateForm(event) {
     showToast("Password should be at least 6 characters.");
     return;
   }
+Swal.fire({
+    icon: 'success',
+    title: 'Registration Successful!',
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    customClass: {
+      popup: 'fun-toast'
+    }
+  });
 
+  // ⏳ Then redirect after alert
+  setTimeout(() => {
+    window.location.href = "panda.html"; // change to your actual homepage file
+  }, 3000);
 }
+
 
 
 const passwordInput = document.getElementById("password");

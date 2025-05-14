@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     toast: true,
     position: 'top-left',
     icon: 'info',
-    text:   'Hey Hunter...Welcome to the Forest.Navigate to the Zairza icon to proceed to home page.',
+    text:   'Hey Hunter!.Welcome to the Forest.Click on ZAIRZEST 4.0 to proceed to home page.',
    
     customClass: {
       popup: 'panda-toast',
