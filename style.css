@@ -1,5 +1,6 @@
 
 @font-face {
+    
   font-family: "Outfit";
   src: url("OutfitLight1.ttf") format('truetype');
 }
@@ -13,15 +14,71 @@
   font-family: "Gilroy-LightItalic";
   src: url("gilroy-light-italic.ttf") format('truetype');
 }
-@font-face {
-  font-family: "OutfitB";
-  src: url("OutfitBold.ttf") format('truetype');
-}
 
 @font-face {
   font-family: "Gilroy";
   src: url("gilroy-medium.ttf") format('truetype');
 }
+
+@media screen and (max-width: 450px) {
+  .home-container{
+    width: 100%;
+    margin-right: 10px;
+    
+  } 
+ 
+  .home-text{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-right: 22rem;
+    
+
+  }
+
+  .home-text p{
+    font-size: 2.5rem;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    
+  }
+  
+
+
+}
+
+@media (max-width: 1020px) {
+  .small {
+    display: none;
+    
+  }
+
+  .register-body {
+    background-image: none;
+ flex-direction: column;
+    align-items: center;
+
+  }
+
+  .layout {
+    flex:1;
+    height: auto;
+    padding: 20px;
+    position: relative;
+  }
+
+  .home {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+   .form {
+    width: 100%s;
+    max-width: 500px;
+  }
+}
+
 
 .signup:active {
   transform: scale(0.95);
@@ -239,7 +296,6 @@ align-items: center;
   height: 80px ;
   font-size: 18px;
   color: white;
-  font-family: OutfitB;
 background-color: rgb(126, 1, 1);
   display: flex;
   align-items: center;
@@ -501,7 +557,7 @@ h2{
     font-weight: 700;
 }
 
-.text-overlay h4{
+h4{
     font-size: 14px;
     margin-right: 80px;
     font-weight: 500;
@@ -931,7 +987,6 @@ h2{
     font-size: 13px;
 }
 
-
 .sidebar{
     display: none;
 }
@@ -1178,33 +1233,9 @@ h2{
         opacity: 0;
       }
     }
-    @media (max-width:494px) {
-    .footer{
-        padding: 56px;
-        height: 520px;
-    }
-    .want-to{
-        font-size: 18px;
-        text-align: center;
-    }
-    .middle-footer{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        margin-top: 0;
-    }
-    .middle-footer-icons{
-        width: 360px;
-        margin-top: 20px;
-        margin-bottom: 15px;
-    }
-    #know-more{
-        height: 60px;
-    }
-    #btm{
-        width: 300px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
+
+
+@media (max-width: 494px) {
+
 }
+
