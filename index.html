@@ -79,13 +79,7 @@
             <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="home-text">
                 <p>Hunt the Future in the</p>
                 <p>Cyber Forest</p>
-                <button id="one">Explore events</button>
-                <script>
-                    document.getElementById("one").addEventListener("click", function () {
-                        window.location.href = "funEvents.html";
-                    });
-                </script>
-
+                <button id="one" onclick="document.querySelector('.eventhead').scrollIntoView({ behavior: 'smooth' });">Explore events</button>
                 <button id="two">Register now</button>
                 <script>
                     document.getElementById("two").addEventListener("click", function () {
