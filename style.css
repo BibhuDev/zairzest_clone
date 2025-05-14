@@ -501,7 +501,7 @@ h2{
     font-weight: 700;
 }
 
-h4{
+.text-overlay h4{
     font-size: 14px;
     margin-right: 80px;
     font-weight: 500;
@@ -576,7 +576,7 @@ h4{
 .alleve .dig img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    
     padding-top: 0.5rem;
     display: block;
     border-radius: 5%;
@@ -931,6 +931,7 @@ h4{
     font-size: 13px;
 }
 
+
 .sidebar{
     display: none;
 }
@@ -1177,9 +1178,33 @@ h4{
         opacity: 0;
       }
     }
-
-
-@media (max-width: 494px) {
-
+    @media (max-width:494px) {
+    .footer{
+        padding: 56px;
+        height: 520px;
+    }
+    .want-to{
+        font-size: 18px;
+        text-align: center;
+    }
+    .middle-footer{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 0;
+    }
+    .middle-footer-icons{
+        width: 360px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    #know-more{
+        height: 60px;
+    }
+    #btm{
+        width: 300px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
-
