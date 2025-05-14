@@ -5,6 +5,7 @@ body {
   background-size: cover;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 
 
   
@@ -356,4 +357,15 @@ body {
     height: 32px;
     width: 406px;
     font-size: 13px;
+}
+
+@media screen and (max-width: 1200px){
+
+  .layout{
+    justify-content: center;
+    align-items: center;
+     }
+
+  
+  
 }
