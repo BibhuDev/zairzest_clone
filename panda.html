@@ -5,8 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PANDA</title>
     <link rel="stylesheet" href="panda.css">
+    
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"  />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+
+    <div class="navbar">
+        <div class="left-text-div">
+            <a href="zairzest.html" target="_blank" style="color: inherit; text-decoration: none;">
+                <div class="left-text">
+                        <p id="zairzest">Zairzest </p>
+                        <p id="fourO">4.0</p>
+                </div>
+            </a>
+        </div>
+        <div class="right-text-div">
+            <div class="right-text">
+                <a href="about.html" target="_blank" style="color: inherit; text-decoration: none;">
+                    <h4 id="navbar-text">About Us</h4>
+                </a>
+                <h4 id="navbar-text">Log Out</h4>
+                <h4 id="navbar-text">Hi, User</h4>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <div class="layout">
         <div class="cold">
         </div>
@@ -16,6 +43,99 @@
             <div class="brew"></div>
         </div>
     </div>
+
+     <div class="footer">
+        <div class="want-to">
+            <h1>Want to Know about us ?</h1>
+        </div>
+        <div class="middle-footer">
+            <p id="know-more">Come and know more about Zairza and join our community to experience such more amazing stuffs.</p>
+            <div class="middle-footer-icons">
+                <div class="icon 1">
+                    <a href="https://www.facebook.com/zairza.cetb" target="_blank" style="color: inherit; text-decoration: none;">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="icon 2">
+                    <a href="https://mobile.x.com/zairza_outr" target="_blank" style="color: inherit; text-decoration: none;">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+                <div class="icon 3">
+                    <a href="https://www.youtube.com/@zairzarobosofdescluboutrb1825" target="_blank" style="color: inherit; text-decoration: none;">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+                <div class="icon 4">
+                    <a href="mailto:cet.sac.zairza@gmail.com" target="_blank" style="color: inherit; text-decoration: none;">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="icon 5">
+                    <a href="https://www.instagram.com/zairza.outr/" target="_blank" style="color: inherit; text-decoration: none;">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="icon 6">
+                    <a href="https://www.linkedin.com/company/zairza/posts/?feedView=all" target="_blank" style="color: inherit; text-decoration: none;">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <p id="btm">OUTR (CET Campus), Kalinga Nagar, Ghatikia, Bhubaneswar, Odisha. +91 8984344805</p>
+            <div class="bottom-footer-icon">
+                <i>Presented by</i>
+                <img id="zairza-logo" src="asset/Group 147.svg">
+            </div>
+        </div>
+    </div>
+
+    <div class="music-player">
+    <audio loop src="asset/darkside.mp3" id="main-audio" > </audio>
+
+    <div class="wcircle">
+    <div class="circle-wave"></div>
+    <div class="circle-wave"></div>
+    <div class="circle-wave"></div>
+    </div>
+
+    <div class="mainicon" id="playButton" >
+
+        <i class="fa fa-play" id="playIcon"></i>
+    </div>
+
+
+
     <script src="zairza3.js"></script>
+    <script>
+         const button= document.getElementById('playButton');
+       const audio= document.getElementById('main-audio');
+       const play= document.getElementById('playIcon');
+       const circle = document.querySelectorAll('.circle-wave')
+       
+
+       let isplaying = false;
+
+       play.addEventListener('click',() => {
+
+        isplaying=!isplaying; 
+
+        if(isplaying){
+            audio.play();
+            play.classList.replace('fa-play','fa-pause');
+            circle.forEach((wave)=>wave.classList.add('active'));
+
+        }
+        else {
+            audio.pause();
+            play.classList.replace('fa-pause', 'fa-play');
+             circle.forEach((wave)=>wave.classList.remove('active'));
+        }
+
+       })
+        
+    </script>
 </body>
 </html>

@@ -8,13 +8,17 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="style.css">
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- outfit font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    
+
 </head>
 
 <body>
@@ -22,21 +26,22 @@
         <div class="left-text-div">
             <a href="zairzest.html" target="_blank" style="color: inherit; text-decoration: none;">
                 <div class="left-text">
-                        <p id="zairzest">Zairzest </p>
-                        <p id="fourO">4.0</p>
+                    <p id="zairzest">Zairzest </p>
+                    <p id="fourO">4.0</p>
                 </div>
             </a>
         </div>
         <div class="right-text-div">
             <div class="right-text">
-                <a href="about.html" target="_blank" style="color: inherit; text-decoration: none;">
+                <a href="about.html" style="color: inherit; text-decoration: none;">
                     <h4>About Us</h4>
                 </a>
-                <a href="register.html" target="_blank" style="color: inherit; text-decoration: none;">
-                    <h4>Register</h4>   </a>
-                <a href="sign.html" target="_blank" style="color: inherit; text-decoration: none;">
-                    <h4>Sign In</h4></a>
-             
+                <a href="register.html" style="color: inherit; text-decoration: none;">
+                    <h4>Register</h4>
+                </a>
+                <a href="sign.html" style="color: inherit; text-decoration: none;">
+                    <h4>Sign In</h4>
+                </a>
             </div>
             <div class="ham-icon" onclick="toggleSidebar()">
                 <i class="fa-solid fa-bars"></i>
@@ -50,11 +55,15 @@
         </div>
         <div class="nav-btn-content-container">
             <div class="nav-btn-content">
-                <a href="about.html" target="_blank" style="color: inherit; text-decoration: none;">
+                <a href="about.html" style="color: inherit; text-decoration: none;">
                     <h4>About Us</h4>
                 </a>
-                <h4>Register</h4>
-                <h4>Sign In</h4>
+                <a href="register.html" style="color: inherit; text-decoration: none;">
+                    <h4>Register</h4>
+                </a>
+                <a href="sign.html" style="color: inherit; text-decoration: none;">
+                    <h4>Sign In</h4>
+                </a>
             </div>
         </div>
         <div class="zairza-img">
@@ -72,26 +81,25 @@
                 <p>Cyber Forest</p>
                 <button id="one">Explore events</button>
                 <script>
-  document.getElementById("one").addEventListener("click", function() {
-    window.location.href = "funEvents.html";
-  });
-</script>
+                    document.getElementById("one").addEventListener("click", function () {
+                        window.location.href = "funEvents.html";
+                    });
+                </script>
 
                 <button id="two">Register now</button>
                 <script>
-  document.getElementById("two").addEventListener("click", function() {
-    window.location.href = "register.html";
-  });
-</script>
+                    document.getElementById("two").addEventListener("click", function () {
+                        window.location.href = "register.html";
+                    });
+                </script>
 
             </div>
         </div>
     </section>
 
-    <section data-aos="fade-up"
-     data-aos-duration="1000" class="panda-section">
+    <section data-aos="fade-up" data-aos-duration="1000" class="panda-section">
         <div class="image-container">
-            <img src="public/Frame 8027.png"/>
+            <img src="public/Frame 8027.png" />
         </div>
         <div class="text-container">
             <h1><span style="color: #38CCFF;">Zen 4.0 : </span>Your Guide in The Cyber Wild!</h1>
@@ -118,19 +126,23 @@
             </div>
             <div class="image-container">
                 <div data-aos="flip-left" data-aos-duration="500" class="image-box">
-                    <image src="public/photo1.jpg" id="img1"></image>
-                    <div class="text-overlay">
-                        <h2>Tech events</h2>
-                        <h4>Click to view</h4>
-                    </div>
+                    <a href="techEvents.html">
+                        <image src="public/photo1.jpg" id="img1"></image>
+                        <div class="text-overlay">
+                            <h2>Tech events</h2>
+                            <h4>Click to view</h4>
+                        </div>
+                    </a>
                 </div>
 
                 <div data-aos="flip-right" data-aos-duration="500" class="image-box">
-                    <image src="public/photo2.jpg" id="img2"></image>
-                    <div class="text-overlay">
-                        <h2>Fun events</h2>
-                        <h4>Click to view</h4>
-                    </div>
+                    <a href="funEvents.html">
+                        <image src="public/photo2.jpg" id="img2"></image>
+                        <div class="text-overlay">
+                            <h2>Fun events</h2>
+                            <h4>Click to view</h4>
+                        </div>
+                    </a>
                 </div>
             </div>
     </section>
@@ -140,35 +152,42 @@
             <h1>Want to Know about us ?</h1>
         </div>
         <div class="middle-footer">
-            <p id="know-more">Come and know more about Zairza and join our community to experience such more amazing stuffs.</p>
+            <p id="know-more">Come and know more about Zairza and join our community to experience such more amazing
+                stuffs.</p>
             <div class="middle-footer-icons">
                 <div class="icon 1">
-                    <a href="https://www.facebook.com/zairza.cetb" target="_blank" style="color: inherit; text-decoration: none;">
+                    <a href="https://www.facebook.com/zairza.cetb" target="_blank"
+                        style="color: inherit; text-decoration: none;">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
                 </div>
                 <div class="icon 2">
-                    <a href="https://mobile.x.com/zairza_outr" target="_blank" style="color: inherit; text-decoration: none;">
+                    <a href="https://mobile.x.com/zairza_outr" target="_blank"
+                        style="color: inherit; text-decoration: none;">
                         <i class="fa-brands fa-x-twitter"></i>
                     </a>
                 </div>
                 <div class="icon 3">
-                    <a href="https://www.youtube.com/@zairzarobosofdescluboutrb1825" target="_blank" style="color: inherit; text-decoration: none;">
+                    <a href="https://www.youtube.com/@zairzarobosofdescluboutrb1825" target="_blank"
+                        style="color: inherit; text-decoration: none;">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
                 </div>
                 <div class="icon 4">
-                    <a href="mailto:cet.sac.zairza@gmail.com" target="_blank" style="color: inherit; text-decoration: none;">
+                    <a href="mailto:cet.sac.zairza@gmail.com" target="_blank"
+                        style="color: inherit; text-decoration: none;">
                         <i class="fa-regular fa-envelope"></i>
                     </a>
                 </div>
                 <div class="icon 5">
-                    <a href="https://www.instagram.com/zairza.outr/" target="_blank" style="color: inherit; text-decoration: none;">
+                    <a href="https://www.instagram.com/zairza.outr/" target="_blank"
+                        style="color: inherit; text-decoration: none;">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                 </div>
                 <div class="icon 6">
-                    <a href="https://www.linkedin.com/company/zairza/posts/?feedView=all" target="_blank" style="color: inherit; text-decoration: none;">
+                    <a href="https://www.linkedin.com/company/zairza/posts/?feedView=all" target="_blank"
+                        style="color: inherit; text-decoration: none;">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                 </div>
@@ -181,63 +200,63 @@
                 <img id="zairza-logo" src="asset/Group 147.svg">
             </div>
         </div>
-    </div> 
-
-    
-  <div class="music-player">
-    <audio src="asset/darkside.mp3" id="main-audio" loop> </audio>
-
-    <div class="wcircle">
-    <div class="circle-wave"></div>
-    <div class="circle-wave"></div>
-    <div class="circle-wave"></div>
     </div>
 
-    <div class="mainicon" id="playButton" >
 
-        <i class="fa fa-play" id="playIcon"></i>
-    </div>
+    <div class="music-player">
+        <audio src="asset/darkside.mp3" id="main-audio" loop> </audio>
 
-   
+        <div class="wcircle">
+            <div class="circle-wave"></div>
+            <div class="circle-wave"></div>
+            <div class="circle-wave"></div>
+        </div>
 
-    
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    
-    <script>
-        function toggleSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.classList.toggle('open');
-        }
+        <div class="mainicon" id="playButton">
 
-         const button= document.getElementById('playButton');
-       const audio= document.getElementById('main-audio');
-       const play= document.getElementById('playIcon');
-       const circle = document.querySelectorAll('.circle-wave')
-       
+            <i class="fa fa-play" id="playIcon"></i>
+        </div>
 
-       let isplaying = false;
 
-       play.addEventListener('click',() => {
 
-        isplaying=!isplaying; 
 
-        if(isplaying){
-            audio.play();
-            play.classList.replace('fa-play','fa-pause');
-            circle.forEach((wave)=>wave.classList.add('active'));
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 
-        }
-        else {
-            audio.pause();
-            play.classList.replace('fa-pause', 'fa-play');
-             circle.forEach((wave)=>wave.classList.remove('active'));
-        }
+        <script>
+            function toggleSidebar() {
+                const sidebar = document.getElementById('sidebar');
+                sidebar.classList.toggle('open');
+            }
 
-       })
-    </script>
+            const button = document.getElementById('playButton');
+            const audio = document.getElementById('main-audio');
+            const play = document.getElementById('playIcon');
+            const circle = document.querySelectorAll('.circle-wave')
+
+
+            let isplaying = false;
+
+            play.addEventListener('click', () => {
+
+                isplaying = !isplaying;
+
+                if (isplaying) {
+                    audio.play();
+                    play.classList.replace('fa-play', 'fa-pause');
+                    circle.forEach((wave) => wave.classList.add('active'));
+
+                }
+                else {
+                    audio.pause();
+                    play.classList.replace('fa-pause', 'fa-play');
+                    circle.forEach((wave) => wave.classList.remove('active'));
+                }
+
+            })
+        </script>
 </body>
 
 </html>
