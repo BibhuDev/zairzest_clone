@@ -60,6 +60,35 @@
     </div>
 
     <script src="zaizra2.js"></script>
+    <script>
+        document.querySelectorAll('a[href$=".html"]').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetURL = this.getAttribute('href');
+
+        // Create loader iframe overlay
+        const iframe = document.createElement('iframe');
+        iframe.src = 'loadingpage.html';
+        Object.assign(iframe.style, {
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100vw',
+          height: '100vh',
+          border: 'none',
+          zIndex: 9999,
+        });
+        document.body.appendChild(iframe);
+
+        // Delay then navigate
+        setTimeout(() => {
+          window.location.href = targetURL;
+        }, 1500); // Match your loader animation duration
+      });
+    });
+    </script>
+
     
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
