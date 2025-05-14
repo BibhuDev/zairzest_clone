@@ -21,6 +21,10 @@ body {
   src: url("OutfitRegular.ttf") format('truetype');
 }
 @font-face {
+  font-family: "OutfitB";
+  src: url("OutfitBold.ttf") format('truetype');
+}
+@font-face {
   font-family: "Beyno";
   src: url(/asset/BEYNO.otf);
 }
@@ -40,6 +44,35 @@ body {
  
   margin-bottom: 300px;
 }
+
+.swal2-popup.panda-toast {
+  width: 600px ;
+  height: 130px ;
+  margin-top: 43%;
+  position: absolute;
+  font-size: 18px;
+ background-color: #020237;
+  color: #c9e206;
+  font-family: OutfitB;
+  border-radius: 12px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.swal2-icon.panda-icon {
+ 
+  border-color: rgb(255, 255, 255) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+
+
+
 
 .cold {
   width: 240px;

@@ -13,6 +13,10 @@
   font-family: "Gilroy-LightItalic";
   src: url("gilroy-light-italic.ttf") format('truetype');
 }
+@font-face {
+  font-family: "OutfitB";
+  src: url("OutfitBold.ttf") format('truetype');
+}
 
 @font-face {
   font-family: "Gilroy";
@@ -235,6 +239,7 @@ align-items: center;
   height: 80px ;
   font-size: 18px;
   color: white;
+  font-family: OutfitB;
 background-color: rgb(126, 1, 1);
   display: flex;
   align-items: center;
