@@ -358,6 +358,73 @@ body {
     width: 406px;
     font-size: 13px;
 }
+.sidebar{
+    display: none;
+}
+@media (max-width: 786px) {
+  .img-grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+  .right-text h4{
+    display: none;
+  }
+  .ham-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    height: 80px;
+    width: 24px;
+    color: white;
+  }
+  .ham-icon:hover{
+    cursor: pointer;
+  }
+
+  .sidebar{
+    display: block;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -461px;
+    z-index: 1000;
+    height: 100vh;
+    width: 460.8px;
+    background-color: #111111;
+    padding: 0px 0px 32px;
+    transition: right 0.3s ease;
+  }
+  .sidebar.open{
+    right: 0;
+  }
+  .close-icon{
+    display: block;
+    cursor: pointer;
+    margin: 2rem 2rem 5px;
+    text-align: right;
+    height: 24px;
+    font-size: 24px;
+   }
+   .nav-btn-content h4{
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: 'Outfit';
+    margin-left: 48px;
+    margin-bottom: 32px;
+    color: #FFFFFF;
+   }
+   .zairza-img{
+    display: flex;
+    bottom: 0;
+    height: 50px;
+    margin-bottom: 2.5rem;
+    margin-left: 2rem;
+    position: fixed;
+    width: 243px;
+   }
+}
 
 @media screen and (max-width: 1200px){
 
