@@ -332,10 +332,12 @@ input[type="password"]::-webkit-credentials-auto-fill-button {
 .eye-icon {
   position: absolute;
   right: 125px;
-  top: 58.47%;
+  top: 59.47%;
   width: 20px;
   height: 20px;
   cursor: pointer;
   transform: translateY(-50%);
   transition: opacity 0.2s ease;
+
 }
+

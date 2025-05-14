@@ -225,7 +225,6 @@ input[type="password"]::-webkit-credentials-auto-fill-button {
   display: none !important;
 }
 
-
 .eye-icon {
   position: absolute;
   right: 125px;
