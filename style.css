@@ -48,16 +48,19 @@
 
 }
 
-@media (max-width: 1020px) {
+@media screen and (max-width: 1020px) {
   .small {
     display: none;
+    
     
   }
 
   .register-body {
     background-image: none;
+    background-size: hidden;
  flex-direction: column;
     align-items: center;
+    
 
   }
 
@@ -66,6 +69,9 @@
     height: auto;
     padding: 20px;
     position: relative;
+    z-index: 9999;
+    
+    
   }
 
   .home {
@@ -1249,7 +1255,30 @@ h4{
     }
 
 
-@media (max-width: 494px) {
+@media screen and (max-width: 1020px) {
 
+  .small {
+    display: none;
+  }
+
+  .register-body {
+    background-image: none;
+  }
+
+  .layout {
+    flex: 1;
+    width: 100%;
+  }
+
+  .home {
+    width: 100%;
+    padding: 2rem;
+  }
 }
+
+
+  
+
+  
+
 
