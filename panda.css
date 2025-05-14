@@ -16,7 +16,10 @@ body {
   font-family: "Outfit";
   src: url("OutfitRegular.ttf") format('truetype');
 }
-
+@font-face {
+  font-family: "Beyno";
+  src: url(/asset/BEYNO.otf);
+}
 
 
 .layout {
@@ -29,6 +32,7 @@ body {
   background: linear-gradient(180deg, #004157 0%, #111111 100%);
   justify-content: center;
   align-items: center;
+  margin-bottom: 300px;
 }
 
 .cold {
