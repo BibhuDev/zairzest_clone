@@ -230,6 +230,27 @@ align-items: center;
 
 }
 
+.swal2-popup.form-toast {
+  width: 600px ;
+  height: 80px ;
+  font-size: 18px;
+  color: white;
+background-color: rgb(126, 1, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.swal2-icon.form-icon {
+  
+  border-color: white !important;
+  color: white !important;
+}
+
+
 .or {
 
  color: rgba(168, 168, 168, 1);

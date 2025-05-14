@@ -229,6 +229,45 @@ input {
 }
 
 
+.swal2-popup.my-toast {
+  width: 600px ;
+  height: 90px ;
+  font-size: 18px;
+  background-color: rgb(126, 1, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.swal2-icon.no-tint-icon {
+  color: white !important; 
+  border-color: white !important; 
+}
+
+
+
+.swal2-popup.zairza-toast {
+  width: 600px ;
+  height: 90px ;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #242323; 
+  color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+
+.swal2-icon.zairza-icon {
+  
+  border-color: white !important;
+  color: white !important;
+}
+
 
 .or {
   color: rgba(168, 168, 168, 1);

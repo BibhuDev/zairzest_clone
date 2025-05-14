@@ -9,31 +9,47 @@ function validateForm(event) {
   const namePattern = /^[A-Za-z\s]+$/;
   const regPattern = /^\d{8,}$/;
 
+  
+  function showToast(message) {
+    Swal.fire({
+      toast: true,
+      position: 'top-end',
+      icon: 'warning',
+      title: message,
+      showConfirmButton: false,
+      timer: 5000,
+      timerProgressBar: true,
+      customClass: {
+        popup: 'form-toast',
+        icon: 'form-icon'
+      }
+    });
+  }
+
   if (!name || !regno || !email || !password) {
-    alert("All fields are required.");
+    showToast("All fields are required.");
     return;
   }
 
   if (!namePattern.test(name)) {
-    alert("Name should contain only letters.");
+    showToast("Name should contain only letters.");
     return;
   }
 
   if (!regPattern.test(regno)) {
-    alert("Registration number must be at least 8 digits.");
+    showToast("Registration number must be at least 8 digits.");
     return;
   }
 
   if (!email.includes("@") || !email.includes(".")) {
-    alert("Invalid email address.");
+    showToast("Invalid email address.");
     return;
   }
 
   if (password.length < 6) {
-    alert("Password should be at least 6 characters.");
+    showToast("Password should be at least 6 characters.");
     return;
   }
-
 
 }
 
