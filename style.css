@@ -212,13 +212,13 @@ input[type="password"]::-webkit-credentials-auto-fill-button {
 
 }
 
-.pika {
-  width: 100.99999237060547px;
-  height: 18.999996185302734px;
+.signup {
+  width: 151.99999237060547px;
+  height: 51.999996185302734px;
   border-radius: 8px;
   padding-top: 16px;
   padding-right: 32px;
-  font-size: 14px;
+  font-size: 16px;
   padding-bottom: 16px;
   padding-left: 32px;
   gap: 12px;
@@ -229,15 +229,7 @@ justify-content: center;
 align-items: center;
 
 }
-.signup{
-    font-family: Gilroy-SemiBold;
-font-weight: 400;
-font-size: 20px;
-line-height: 100%;
-margin-left: 5%;
-letter-spacing: 0%;
-color: #000;
-}
+
 .or {
 
  color: rgba(168, 168, 168, 1);
