@@ -926,6 +926,7 @@ h2{
     font-size: 13px;
 }
 
+
 .sidebar{
     display: none;
 }
@@ -1172,9 +1173,33 @@ h2{
         opacity: 0;
       }
     }
-
-
-@media (max-width: 494px) {
-
+    @media (max-width:494px) {
+    .footer{
+        padding: 56px;
+        height: 520px;
+    }
+    .want-to{
+        font-size: 18px;
+        text-align: center;
+    }
+    .middle-footer{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 0;
+    }
+    .middle-footer-icons{
+        width: 360px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    #know-more{
+        height: 60px;
+    }
+    #btm{
+        width: 300px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
-
