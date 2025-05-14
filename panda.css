@@ -1,9 +1,13 @@
 body {
-  background-image: url('panda.jpg');
+ background-image: url('panda.jpg');
   background-repeat: no-repeat;
-  width: 100%;
+  
   background-size: cover;
   height: 100%;
+  width: 100%;
+
+
+  
 }
 
 
@@ -29,6 +33,8 @@ body {
   background: linear-gradient(180deg, #004157 0%, #111111 100%);
   justify-content: center;
   align-items: center;
+  margin-bottom: 20rem;
+ 
 }
 
 .cold {
@@ -250,6 +256,7 @@ body {
     padding-bottom: 80px;
     padding-left : 56px;
     padding-right: 56px;
+    
 }
 .want-to{
     height: 100.8px;
