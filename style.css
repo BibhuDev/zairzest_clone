@@ -228,10 +228,10 @@ input[type="password"]::-webkit-credentials-auto-fill-button {
 
 .eye-icon {
   position: absolute;
-  right: 125px;
+  right: 7.9rem;
   top: 56.47%;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   cursor: pointer;
   transform: translateY(-50%);
   transition: opacity 0.2s ease;
@@ -1268,11 +1268,18 @@ h2{
   .layout {
     flex: 1;
     width: 100%;
+  
   }
 
   .home {
     width: 100%;
     padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .eye-icon{
+
   }
 }
 
