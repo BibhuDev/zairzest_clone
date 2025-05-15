@@ -1431,6 +1431,9 @@ h2{
       font-size: 2.5rem;
       min-width: 200px;
     }
+    .sidebar{
+      width: 100vw;
+    }
 }
 
 @media screen and (max-width: 450px) {
