@@ -213,7 +213,7 @@
                 sidebar.classList.toggle('open');
             }
 
-              window.addEventListener('load', () => {
+              window.addEventListener('pageshow', () => {
   const oldLoader = document.querySelector('iframe[src="loadingpage.html"]');
   if (oldLoader) {
     oldLoader.remove();
