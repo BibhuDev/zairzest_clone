@@ -6,6 +6,10 @@ body {
   font-family: "Outfit";
   src: url("OutfitLight1.ttf") format('truetype');
 }
+@font-face {
+  font-family: "OutfitB";
+  src: url("OutfitBold.ttf") format('truetype');
+}
 
 @font-face {
   font-family: "Outfit";
@@ -130,6 +134,8 @@ body {
 
 
 
+
+
 input {
   padding: 12px;
   border: 1px solid #ccc;
@@ -229,8 +235,64 @@ input {
 }
 
 
+.swal2-popup.my-toast {
+  width: 600px ;
+  height: 90px ;
+  font-size: 18px;
+  background-color: rgb(126, 1, 1);
+  display: flex;
+   font-family: OutfitB;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.swal2-icon.no-tint-icon {
+  color: white !important; 
+  border-color: white !important; 
+}
+
+
+
+.swal2-popup.zairza-toast {
+  width: 600px ;
+  height: 90px ;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #242323; 
+  color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+
+.swal2-icon.zairza-icon {
+  
+  border-color: white !important;
+  color: white !important;
+}
+.swal2-popup.success-toast {
+  width: 600px;
+  height: 90px;
+  font-size: 18px;
+  background-color: #2e7d32; 
+  display: flex;
+  font-family: OutfitB;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+
+
 
 .or {
+  color: rgba(168, 168, 168, 1);
   margin-top: 3%;
 }
 
@@ -272,10 +334,87 @@ input[type="password"]::-webkit-credentials-auto-fill-button {
 .eye-icon {
   position: absolute;
   right: 125px;
-  top: 58.47%;
+  top: 59.47%;
   width: 20px;
   height: 20px;
   cursor: pointer;
   transform: translateY(-50%);
   transition: opacity 0.2s ease;
+
+}
+
+@media screen and (max-width: 1020px) {
+
+  .small {
+    display: none;
+  }
+
+  body {
+    background-image: none;
+  }
+
+  .layout {
+    flex: 1;
+    width: 100%;
+  
+  }
+
+  .home {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .eye-icon{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sub{
+    margin-top: 4rem;
+  }
+
+  .mew{
+    margin-top: 4rem;
+  }
+
+    .register-body {
+    margin-left: 49px;
+  }
+
+  .zai{
+    font-size: 30px;
+  }
+
+  .goo{
+    width: 7.5rem;
+  }
+
+  .bar{
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 1350px) and (min-width: 1020px){
+
+  .sub{
+    margin-top: 4rem;
+  }
+
+  .mew{
+    margin-top: 4rem;
+  }
+
+  .goo{
+    width: 7.5rem;
+  }
+
+  .bar{
+    margin-top: 3rem;
+  }
+
+
+  .eye-icon{
+    display: none;
+  }
 }

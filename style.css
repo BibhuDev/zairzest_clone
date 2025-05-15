@@ -1,5 +1,6 @@
 
 @font-face {
+    
   font-family: "Outfit";
   src: url("OutfitLight1.ttf") format('truetype');
 }
@@ -18,6 +19,72 @@
   font-family: "Gilroy";
   src: url("gilroy-medium.ttf") format('truetype');
 }
+
+@media screen and (max-width: 450px) {
+  .home-container{
+    width: 100%;
+    margin-right: 10px;
+    
+  } 
+ 
+  .home-text{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-right: 22rem;
+    
+
+  }
+
+  .home-text p{
+    font-size: 2.5rem;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    
+  }
+  
+
+
+}
+
+@media screen and (max-width: 1020px) {
+  .small {
+    display: none;
+    
+    
+  }
+
+  .register-body {
+    background-image: none;
+    background-size: hidden;
+ flex-direction: column;
+    align-items: center;
+    
+
+  }
+
+  .layout {
+    flex:1;
+    height: auto;
+    padding: 20px;
+    position: relative;
+    z-index: 9999;
+    
+    
+  }
+
+  .home {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+   .form {
+    width: 100%s;
+    max-width: 500px;
+  }
+}
+
 
 .signup:active {
   transform: scale(0.95);
@@ -56,7 +123,7 @@
   flex-direction: column;
   gap: 2rem;
   position: absolute;
-  top: 50%;
+  top: 35%;
   transform: translateY(-50%);
   left: 9%;
 }
@@ -158,13 +225,12 @@ input[type="password"]::-webkit-credentials-auto-fill-button {
   display: none !important;
 }
 
-
 .eye-icon {
   position: absolute;
-  right: 125px;
+  right: 7.9rem;
   top: 56.47%;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   cursor: pointer;
   transform: translateY(-50%);
   transition: opacity 0.2s ease;
@@ -183,6 +249,8 @@ input[type="password"]::-webkit-credentials-auto-fill-button {
   font-weight: 400;
   font-style: italic;
   font-size: 18px;
+  color: rgba(147, 147, 147, 1);
+
   line-height: 20px;
   letter-spacing: 0%;
 
@@ -211,23 +279,62 @@ input[type="password"]::-webkit-credentials-auto-fill-button {
 }
 
 .signup {
-  width: 120.99999237060547px;
+  width: 151.99999237060547px;
   height: 51.999996185302734px;
   border-radius: 8px;
   padding-top: 16px;
   padding-right: 32px;
-  font-size: 14px;
+  font-size: 16px;
   padding-bottom: 16px;
   padding-left: 32px;
   gap: 12px;
+  display: flex;
   border: 2px solid transparent;
   background-color: rgba(56, 204, 255, 1);
-
+justify-content: center;
+align-items: center;
 
 }
 
+.swal2-popup.form-toast {
+  width: 600px ;
+  height: 80px ;
+  font-size: 18px;
+  color: white;
+background-color: rgb(126, 1, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.swal2-icon.form-icon {
+  
+  border-color: white !important;
+  color: white !important;
+}
+
+.swal2-popup.fun-toast{
+  width: 600px;
+  height: 90px;
+  font-size: 18px;
+  background-color: #2e7d32; 
+  display: flex;
+  font-family: OutfitB;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+
 .or {
- 
+
+ color: rgba(168, 168, 168, 1);
+
   margin-top: 17.233px;
 }
 
@@ -255,7 +362,7 @@ input[type="password"]::-webkit-credentials-auto-fill-button {
 
 }
 
-.icon {
+.icong {
   width: 20.003398895263672px;
   height: 21.000001907348633px;
 
@@ -322,7 +429,9 @@ body {
     color: white;
     font-size: 48px;
     letter-spacing: -4%;
-
+    margin-left: 8rem;
+    margin-top: -30rem;
+    position: absolute;
 }
 
 .btns {
@@ -382,8 +491,6 @@ body {
 }
 
 .image-container img {
-    height: 460px;
-    width: 350px;
     margin-top: 60px;
 }
 
@@ -469,7 +576,7 @@ h2{
     font-weight: 700;
 }
 
-h4{
+.text-overlay h4{
     font-size: 14px;
     margin-right: 80px;
     font-weight: 500;
@@ -489,9 +596,6 @@ h4{
     gap: 1.5rem;
     padding: 1.5rem;
     justify-items: center;
-  
-    
-    
 }
 
 .tech {
@@ -547,7 +651,7 @@ h4{
 .alleve .dig img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    
     padding-top: 0.5rem;
     display: block;
     border-radius: 5%;
@@ -661,13 +765,6 @@ h4{
 
 
 
-
-
-
-
-
-
-
 @media (max-width: 1024px) {
 
     .btns {
@@ -761,7 +858,6 @@ h4{
     }
 }
 
-
 @font-face{
     font-family: 'Beyno';
     src: url("asset/BEYNO.otf") format('opentype');
@@ -777,7 +873,7 @@ h4{
     padding-left: 4rem;
     padding-right: 4rem;
     box-sizing: border-box;
-    z-index: 1;
+    z-index: 3;
 }
 .left-text-div{
     height: 80px;
@@ -959,6 +1055,53 @@ h4{
     object-fit: cover;
     display: block;
 }
+
+
+.about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #000000;
+}
+.about-us-content{
+    padding: 5rem;
+    max-width: 1130px;
+    height: 100%;
+    box-sizing: border-box;
+    width: 100%;
+}
+#head{
+    margin-bottom: 32px;
+    margin-top: 32px;
+    font-family: 'Outfit';
+    color: #FFFFFF;
+    min-width: 630px;
+    font-size: 56px;
+}
+#para{
+    margin-bottom: 32px;
+    font-family: 'Outfit';
+    font-size: 16px;
+    color: #C3C3C3;
+}
+.img-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+.image{
+    width: 100%;
+    aspect-ratio: 485 / 330;
+    overflow: hidden;
+}
+.img-grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 @media (max-width: 786px) {
   .img-grid{
     grid-template-columns: 1fr;
@@ -986,7 +1129,7 @@ h4{
     position: fixed;
     top: 0;
     right: -461px;
-    z-index: 1;
+    z-index: 3;
     height: 100vh;
     width: 460.8px;
     background-color: #111111;
@@ -1029,3 +1172,167 @@ h4{
     flex-direction: column;
    }
 }
+ .music-player {
+       
+        position: fixed;
+        z-index: 9999;
+        bottom: 2.5rem;
+        right: 6rem;
+        border-radius: 50%;
+
+    }
+
+    .mainicon {
+        width: 3.2rem;
+      height: 3.2rem;
+      border-radius: 50%;
+      background-color: rgb(51,51,51);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 2;
+      position: relative;
+    }
+
+    #playIcon {
+      color: #fff;
+      font-size: 1.5rem;
+    }
+
+    .wcircle{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    overflow: hidden; 
+    border-radius: 50% ;
+
+    }
+    
+    .circle-wave {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgba(56, 254, 255, 0.5);
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.5) 40%, transparent 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+    animation: pulse 2s infinite;
+    animation-play-state: paused;
+    }
+
+    .circle-wave:nth-child(2) {
+    animation-delay: 0.5s;
+    }
+
+    .circle-wave:nth-child(3) {
+    animation-delay: 1s;
+    }
+
+    .circle-wave.active {
+    animation-play-state: running;
+     opacity: 0.8;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 0;
+      }
+    }
+
+
+@media screen and (max-width: 1020px) {
+
+  .small {
+    display: none;
+  }
+
+  .register-body {
+    background-image: none;
+  }
+
+  .layout {
+    flex: 1;
+    width: 100%;
+  
+  }
+
+  .home {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .eye-icon{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sub{
+    margin-top: 4rem;
+  }
+
+  .mew{
+    margin-top: 4rem;
+  }
+
+    .register-body {
+    margin-left: 49px;
+  }
+
+  .zai{
+    font-size: 30px;
+  }
+
+  .goo{
+    width: 7.5rem;
+  }
+
+  .bar{
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 1350px) and (min-width: 1020px){
+
+  .sub{
+    margin-top: 4rem;
+  }
+
+  .mew{
+    margin-top: 4rem;
+  }
+
+  .goo{
+    width: 7.5rem;
+  }
+
+  .bar{
+    margin-top: 3rem;
+  }
+
+  .eye-icon{
+    display: none;
+  }
+}
+
+
+
+  
+
+  
+
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Square Loader</title>
+  <style>
+   .loaderbody{
+    background-color: #111111;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 45vh;
+
+  }
+
+  .bigsquare{
+    height: 3.5rem;
+    width: 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    
+  }
+
+  .bigsquare div{
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color:  rgba(56, 254, 255);
+    gap: 0.2rem;
+    animation: pulse 0.9s infinite ease-in-out;
+
+  }
+
+  .bigsquare div:nth-child(5){
+    background-color: transparent;
+  }
+
+  .bigsquare div:nth-child(1) { animation-delay: 0s;}
+   .bigsquare div:nth-child(2) {animation-delay: 0.1s;}
+    .bigsquare div:nth-child(3) {animation-delay: 0.2s;}
+     .bigsquare div:nth-child(4) {animation-delay: 0.3s;}
+      .bigsquare div:nth-child(6) {animation-delay: 0.4s;}
+       .bigsquare div:nth-child(7) {animation-delay: 0.5s;}
+        .bigsquare div:nth-child(8) {animation-delay: 0.6s;}
+         .bigsquare div:nth-child(9) {animation-delay: 0.7s;}
+
+         @keyframes pulse {
+
+          0%, 100%{opacity: 0.2; transform: scale(1);}
+          50%{opacity: 1; transform: scale(1.5);}
+
+          
+         }
+
+        
+  </style>
+</head>
+<body class="loaderbody">
+  <div class="bigsquare">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div> 
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <script>
+     
+  </script>
+</body>
+</html>

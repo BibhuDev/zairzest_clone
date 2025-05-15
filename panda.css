@@ -1,9 +1,14 @@
 body {
-  background-image: url('panda.jpg');
+ background-image: url('panda.jpg');
   background-repeat: no-repeat;
-  width: 100vw;
+  
   background-size: cover;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+
+  
 }
 
 
@@ -16,7 +21,14 @@ body {
   font-family: "Outfit";
   src: url("OutfitRegular.ttf") format('truetype');
 }
-
+@font-face {
+  font-family: "OutfitB";
+  src: url("OutfitBold.ttf") format('truetype');
+}
+@font-face {
+  font-family: "Beyno";
+  src: url(/asset/BEYNO.otf);
+}
 
 
 .layout {
@@ -29,7 +41,39 @@ body {
   background: linear-gradient(180deg, #004157 0%, #111111 100%);
   justify-content: center;
   align-items: center;
+  margin-bottom: 20rem;
+ 
+  margin-bottom: 300px;
 }
+
+.swal2-popup.panda-toast {
+  width: 600px ;
+  height: 130px ;
+  margin-top: 43%;
+  position: absolute;
+  font-size: 18px;
+ background-color: #020237;
+  color: #c9e206;
+  font-family: OutfitB;
+  border-radius: 12px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.swal2-icon.panda-icon {
+ 
+  border-color: rgb(255, 255, 255) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+
+
+
 
 .cold {
   width: 240px;
@@ -38,14 +82,23 @@ body {
   top: 42.5px;
   left: 59.47px;
   border-radius: 12px;
-  background-color: rgba(255, 255, 255, 1);
-
+  background-color: #111111;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: Outfit;
 }
+
+
 .iced {
   position: absolute;
-  top: 290px; 
+  top: 290px;
   width: 100%;
   text-align: center;
+  margin-top: 10px;
+  
 }
 
 .latte {
@@ -56,7 +109,7 @@ body {
   line-height: 110.00000000000001%;
   letter-spacing: 0%;
   text-align: center;
-color:  rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 
 
 }
@@ -70,5 +123,316 @@ color:  rgba(255, 255, 255, 1);
   letter-spacing: 0%;
   text-align: center;
   color: rgba(56, 204, 255, 1);
+}
 
+.music-player {
+       
+        position: fixed;
+        z-index: 9999;
+        bottom: 2.5rem;
+        right: 6rem;
+        border-radius: 50%;
+
+    }
+
+    .mainicon {
+        width: 3.2rem;
+      height: 3.2rem;
+      border-radius: 50%;
+      background-color: rgb(51,51,51);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 2;
+      position: relative;
+    }
+
+    #playIcon {
+      color: #fff;
+      font-size: 1.5rem;
+    }
+
+    .wcircle{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    overflow: hidden; 
+    border-radius: 50% ;
+
+    }
+    
+    .circle-wave {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgba(56, 254, 255, 0.5);
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.5) 40%, transparent 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+    animation: pulse 2s infinite;
+    animation-play-state: paused;
+    }
+
+    .circle-wave:nth-child(2) {
+    animation-delay: 0.5s;
+    }
+
+    .circle-wave:nth-child(3) {
+    animation-delay: 1s;
+    }
+
+    .circle-wave.active {
+    animation-play-state: running;
+     opacity: 0.8;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 0;
+      }
+    }
+
+    @font-face{
+    font-family: 'Beyno';
+    src: url("./BEYNO.otf") format('opentype');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    background-color: #111111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.left-text-div{
+    height: 80px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+.left-text:hover{
+    cursor: pointer;
+}
+#zairzest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.6vw;
+    font-family: 'Beyno';
+    letter-spacing: 0.5rem;
+    padding-bottom: 12px;
+    padding-right: 15px;
+}
+#fourO{
+    font-size: 2.4vw;
+    letter-spacing: 0.5rem;
+    font-family: 'Mohave';
+    color: #38CCFF;
+}
+.right-text-div{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+.right-text h4{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit';
+    color: white;
+    padding: 32px;
+    font-size: 16px;
+}
+.right-text h4:hover{
+    color: #38CCFF;
+    cursor: pointer;
+}
+.ham-icon{
+    display: none;
+}
+.footer{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color:#1A1A1A;
+    color: white;
+    font-family: 'Outfit';
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left : 56px;
+    padding-right: 56px;
+    
+}
+.want-to{
+    height: 100.8px;
+    width: 350px;
+    font-size: 20px;
+}
+.middle-footer{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#know-more{
+    height: 40px;
+    max-width: 500px;
+    margin-left: 0;
+}
+.middle-footer-icons{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.icon{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: #38CCFF;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+.icon:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    z-index: 1;
+}
+.bottom-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+}
+.bottom-footer-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#zairza-logo{
+    margin-left: 15px;
+    height: 50px;
+    width: 50px;
+}
+#btm{
+    height: 32px;
+    width: 406px;
+    font-size: 13px;
+}
+.sidebar{
+    display: none;
+}
+@media (max-width: 786px) {
+  .img-grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+  .right-text h4{
+    display: none;
+  }
+  .ham-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    height: 80px;
+    width: 24px;
+    color: white;
+  }
+  .ham-icon:hover{
+    cursor: pointer;
+  }
+
+  .sidebar{
+    display: block;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -461px;
+    z-index: 1000;
+    height: 100vh;
+    width: 460.8px;
+    background-color: #111111;
+    padding: 0px 0px 32px;
+    transition: right 0.3s ease;
+  }
+  .sidebar.open{
+    right: 0;
+  }
+  .close-icon{
+    display: block;
+    cursor: pointer;
+    margin: 2rem 2rem 5px;
+    text-align: right;
+    height: 24px;
+    font-size: 24px;
+   }
+   .nav-btn-content h4{
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: 'Outfit';
+    margin-left: 48px;
+    margin-bottom: 32px;
+    color: #FFFFFF;
+   }
+   .zairza-img{
+    display: flex;
+    bottom: 0;
+    height: 50px;
+    margin-bottom: 2.5rem;
+    margin-left: 2rem;
+    position: fixed;
+    width: 243px;
+   }
+}
+
+@media screen and (max-width: 1200px){
+
+  .layout{
+    justify-content: center;
+    align-items: center;
+     }
+
+  
+  
 }
