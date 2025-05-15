@@ -1437,14 +1437,15 @@ h2{
   .home-container{
     width: 100%;
     margin-right: 10px;
-    
+   
   } 
  
   .home-text{
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding-right: 0rem;
+    padding-right: 7rem;
+
     
 
   }
