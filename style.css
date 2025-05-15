@@ -779,7 +779,7 @@ h2{
         flex-direction: column;
         margin-left: 0;
         text-align: center;
-        padding: 48px 24px;
+        padding: 48px 15px;
     }
 
     .text-container {
@@ -1274,6 +1274,193 @@ h2{
     width: 100%;
     padding: 2rem;
   }
+
+  .eye-icon{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sub{
+    margin-top: 4rem;
+  }
+
+  .mew{
+    margin-top: 4rem;
+  }
+
+    .register-body {
+    margin-left: 49px;
+  }
+
+  .zai{
+    font-size: 30px;
+  }
+
+  .goo{
+    width: 7.5rem;
+  }
+
+  .bar{
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 1900px){
+.eye-icon{
+  display: none;
+}
+}
+
+
+@media screen and (max-width: 1350px) and (min-width: 1020px){
+
+  .sub{
+    margin-top: 4rem;
+  }
+
+  .mew{
+    margin-top: 4rem;
+  }
+
+  .goo{
+    width: 7.5rem;
+  }
+
+  .bar{
+    margin-top: 3rem;
+  }
+
+  .eye-icon{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 348px) {
+
+.alleve{
+
+    margin-left: 0rem;
+    margin-right: 4rem;
+    width: 22rem;
+    height: 33rem;
+}
+
+.alleve .dig{
+
+     width: 21rem;
+  height: 27rem;
+  
+}
+
+}
+
+@media screen and (max-width: 400px) and (min-width:390px){
+
+  .alleve{
+
+    margin-left: 3rem;
+    margin-right: 4rem;
+    width: 22rem;
+    height: 33rem;
+}
+}
+
+@media screen and (max-width: 390px) and (min-width:380px){
+
+    .alleve{
+
+    margin-left: 2.5rem;
+    margin-right: 4rem;
+    width: 22rem;
+    height: 33rem;
+}
+
+}
+
+@media screen and (max-width: 390px) and (min-width:380px){
+
+    .alleve{
+
+    margin-left: 2.5rem;
+    margin-right: 4rem;
+    width: 22rem;
+    height: 33rem;
+}
+}
+
+@media screen and (max-width:380px) and (min-width:354px){
+  
+
+
+
+  .alleve{
+
+    margin-left: 1.6rem;
+    margin-right: 4rem;
+    width: 22rem;
+    height: 33rem;
+}
+}
+
+
+
+
+
+
+@media screen and (min-width: 400px) and (max-width: 524px ){
+  .alleve{
+    margin-right: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 608px){
+
+  .image-box{
+    margin-left: 2rem;
+  }
+}
+
+ @media (max-width:494px) {
+    .footer{
+        padding: 56px;
+        height: 520px;
+    }
+    .want-to{
+        font-size: 18px;
+        text-align: center;
+    }
+    .middle-footer{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 0;
+    }
+    .middle-footer-icons{
+        width: 40px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 1.5rem;
+    }
+    #know-more{
+        height: 60px;
+    }
+    #btm{
+        width: 300px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #head{
+      font-size: 2.5rem;
+      min-width: 200px;
+    }
+}
+
+
+  
+
 }
 
 
