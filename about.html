@@ -250,9 +250,9 @@
     });
 
       window.addEventListener('pageshow', () => {
-  const oldLoader = document.querySelector('iframe[src="loadingpage.html"]');
-  if (oldLoader) {
-    oldLoader.remove();
+   if (event.persisted) {
+    const loader = document.querySelector('iframe[src="loadingpage.html"]');
+    if (loader) loader.remove();
   }
 });
         

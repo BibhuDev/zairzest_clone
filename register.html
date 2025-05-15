@@ -102,10 +102,10 @@
       });
     });
 
-      window.addEventListener('pageshow', () => {
-  const oldLoader = document.querySelector('iframe[src="loadingpage.html"]');
-  if (oldLoader) {
-    oldLoader.remove();
+      window.addEventListener('pageshow', (event) => {
+  if (event.persisted) {
+    const loader = document.querySelector('iframe[src="loadingpage.html"]');
+    if (loader) loader.remove();
   }
 });
 
