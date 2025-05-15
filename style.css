@@ -1345,11 +1345,11 @@ h2{
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 348px) {
 
 .alleve{
 
-    margin-left: 4rem;
+    margin-left: 0rem;
     margin-right: 4rem;
     width: 22rem;
     height: 33rem;
@@ -1363,6 +1363,59 @@ h2{
 }
 
 }
+
+@media screen and (max-width: 400px) and (min-width:390px){
+
+  .alleve{
+
+    margin-left: 3rem;
+    margin-right: 4rem;
+    width: 22rem;
+    height: 33rem;
+}
+}
+
+@media screen and (max-width: 390px) and (min-width:380px){
+
+    .alleve{
+
+    margin-left: 2.5rem;
+    margin-right: 4rem;
+    width: 22rem;
+    height: 33rem;
+}
+
+}
+
+@media screen and (max-width: 390px) and (min-width:380px){
+
+    .alleve{
+
+    margin-left: 2.5rem;
+    margin-right: 4rem;
+    width: 22rem;
+    height: 33rem;
+}
+}
+
+@media screen and (max-width:380px) and (min-width:354px){
+  
+
+
+
+  .alleve{
+
+    margin-left: 1.6rem;
+    margin-right: 4rem;
+    width: 22rem;
+    height: 33rem;
+}
+}
+
+
+
+
+
 
 @media screen and (min-width: 400px) and (max-width: 524px ){
   .alleve{
