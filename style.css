@@ -20,6 +20,12 @@
   src: url("gilroy-medium.ttf") format('truetype');
 }
 
+
+.home-container{
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (max-width: 450px) {
   .home-container{
     width: 100%;
@@ -32,8 +38,6 @@
     align-items: center;
     justify-content: center;
     /* padding-right: 22rem; */
-    right: 7rem;
-    bottom: 15rem;
 
   }
 
@@ -48,6 +52,15 @@
 
 
 }
+
+
+@media screen and (max-width: 642px) {
+  .home-text{
+    margin-left: 0 !important;
+    padding: 1.5rem;
+  }
+}
+
 
 @media screen and (max-width: 1020px) {
   .small {
@@ -360,7 +373,7 @@ background-color: rgb(126, 1, 1);
   align-items: center;
   justify-content: center;
   gap: 8px;
-
+  
 }
 
 .icong {
@@ -376,7 +389,7 @@ background-color: rgb(126, 1, 1);
     src: url("asset/Gilroy-Bold.ttf") format('opentype');
 }
 
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
 
 .alleve{
 
@@ -391,9 +404,9 @@ background-color: rgb(126, 1, 1);
      width: 21rem;
   height: 27rem;
   
-}
+} 
 
-}
+}*/
 
 @media screen and (max-width:355px){
 
@@ -431,7 +444,6 @@ body {
     font-size: 48px;
     letter-spacing: -4%;
     margin-left: 8rem;
-    margin-top: -30rem;
     position: absolute;
 }
 
@@ -486,18 +498,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 64px 48px;
-    position: relative;
-    margin-left: 80px;
+    width: 90%;
 }
 
 .image-container img {
-    margin-top: 60px;
+  width: 600px;
 }
 
 .text-container {
-    max-width: 600px;
-    margin-left: 48px;
 }
 
 .text-container h1 {
@@ -1329,6 +1337,39 @@ h2{
     display: none;
   }
 }
+
+@media screen and (max-width: 400px) {
+
+.alleve{
+
+    margin-left: 4rem;
+    margin-right: 4rem;
+    width: 22rem;
+    height: 33rem;
+}
+
+.alleve .dig{
+
+     width: 21rem;
+  height: 27rem;
+  
+}
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 524px ){
+  .alleve{
+    margin-right: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 608px){
+
+  .image-box{
+    margin-left: 2rem;
+  }
+}
+
  @media (max-width:494px) {
     .footer{
         padding: 56px;
