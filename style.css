@@ -20,12 +20,6 @@
   src: url("gilroy-medium.ttf") format('truetype');
 }
 
-
-.home-container{
-  display: flex;
-  align-items: center;
-}
-
 @media screen and (max-width: 450px) {
   .home-container{
     width: 100%;
@@ -37,7 +31,8 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    /* padding-right: 22rem; */
+    padding-right: 22rem;
+    
 
   }
 
@@ -52,15 +47,6 @@
 
 
 }
-
-
-@media screen and (max-width: 642px) {
-  .home-text{
-    margin-left: 0 !important;
-    padding: 1.5rem;
-  }
-}
-
 
 @media screen and (max-width: 1020px) {
   .small {
@@ -94,7 +80,7 @@
   }
 
    .form {
-    width: 100%s;
+       width: 100%;
     max-width: 500px;
   }
 }
@@ -239,12 +225,13 @@ input[type="password"]::-webkit-credentials-auto-fill-button {
   display: none !important;
 }
 
+
 .eye-icon {
   position: absolute;
-  right: 7.9rem;
+  right: 125px;
   top: 56.47%;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
   transform: translateY(-50%);
   transition: opacity 0.2s ease;
@@ -373,7 +360,7 @@ background-color: rgb(126, 1, 1);
   align-items: center;
   justify-content: center;
   gap: 8px;
-  
+
 }
 
 .icong {
@@ -389,7 +376,7 @@ background-color: rgb(126, 1, 1);
     src: url("asset/Gilroy-Bold.ttf") format('opentype');
 }
 
-/* @media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
 
 .alleve{
 
@@ -404,9 +391,9 @@ background-color: rgb(126, 1, 1);
      width: 21rem;
   height: 27rem;
   
-} 
+}
 
-}*/
+}
 
 @media screen and (max-width:355px){
 
@@ -444,6 +431,7 @@ body {
     font-size: 48px;
     letter-spacing: -4%;
     margin-left: 8rem;
+    margin-top: -30rem;
     position: absolute;
 }
 
@@ -498,14 +486,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    padding: 64px 48px;
+    position: relative;
+    margin-left: 80px;
 }
 
 .image-container img {
-  width: 600px;
+    margin-top: 60px;
 }
 
 .text-container {
+    max-width: 600px;
+    margin-left: 48px;
 }
 
 .text-container h1 {
@@ -873,7 +865,7 @@ h2{
 }
 .navbar{
     height: 80px;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     background-color: #111111;
     display: flex;
@@ -954,7 +946,7 @@ h2{
 }
 .want-to{
     height: 100.8px;
-    max-width: 350px;
+    width: 350px;
     font-size: 20px;
 }
 .middle-footer{
@@ -972,7 +964,7 @@ h2{
 .middle-footer-icons{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    column-gap: 1.5rem;
+    column-gap: 25px;
     justify-content: center;
     align-items: center;
     margin-top: 15px;
@@ -1276,7 +1268,6 @@ h2{
   .layout {
     flex: 1;
     width: 100%;
-  
   }
 
   .home {
@@ -1466,6 +1457,11 @@ h2{
       min-width: 200px;
     }
 }
+
+
+  
+
+
 
 
   
