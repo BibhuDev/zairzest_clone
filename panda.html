@@ -212,6 +212,13 @@
                 const sidebar = document.getElementById('sidebar');
                 sidebar.classList.toggle('open');
             }
+
+              window.addEventListener('load', () => {
+  const oldLoader = document.querySelector('iframe[src="loadingpage.html"]');
+  if (oldLoader) {
+    oldLoader.remove();
+  }
+});
         </script>
 </body>
 

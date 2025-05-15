@@ -370,6 +370,13 @@
         }, 1500); // Match your loader animation duration
       });
     });
+
+      window.addEventListener('load', () => {
+  const oldLoader = document.querySelector('iframe[src="loadingpage.html"]');
+  if (oldLoader) {
+    oldLoader.remove();
+  }
+});
         
 
 
