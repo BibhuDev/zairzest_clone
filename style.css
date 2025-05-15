@@ -20,6 +20,12 @@
   src: url("gilroy-medium.ttf") format('truetype');
 }
 
+
+.home-container{
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (max-width: 450px) {
   .home-container{
     width: 100%;
@@ -31,9 +37,6 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding-right: 22rem;
-    
-
   }
 
   .home-text p{
@@ -47,6 +50,15 @@
 
 
 }
+
+
+@media screen and (max-width: 642px) {
+  .home-text{
+    margin-left: 0 !important;
+    padding: 1.5rem;
+  }
+}
+
 
 @media screen and (max-width: 1020px) {
   .small {
@@ -359,7 +371,7 @@ background-color: rgb(126, 1, 1);
   align-items: center;
   justify-content: center;
   gap: 8px;
-
+  
 }
 
 .icong {
@@ -430,7 +442,6 @@ body {
     font-size: 48px;
     letter-spacing: -4%;
     margin-left: 8rem;
-    margin-top: -30rem;
     position: absolute;
 }
 
@@ -485,18 +496,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 64px 48px;
-    position: relative;
-    margin-left: 80px;
+    width: 90%;
 }
 
 .image-container img {
-    margin-top: 60px;
+  width: 600px;
 }
 
 .text-container {
-    max-width: 600px;
-    margin-left: 48px;
 }
 
 .text-container h1 {
