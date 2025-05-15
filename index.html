@@ -48,6 +48,7 @@
             </div>
         </div>
     </div>
+    
 
     <div class="sidebar" id="sidebar">
         <div class="close-icon" onclick="toggleSidebar()">
@@ -279,8 +280,20 @@
       });
     });
 
+    window.addEventListener('pageshow', (event) => {
+ if (event.persisted) {
+    const loader = document.querySelector('iframe[src="loadingpage.html"]');
+    if (loader) loader.remove();
+ }
+});
+
   </script>
         </script>
+        <style>
+        .navbar{
+            width: 100vw;
+        }
+    </style>
 </body>
 
 </html>
