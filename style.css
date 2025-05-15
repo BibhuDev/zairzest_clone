@@ -954,7 +954,7 @@ h2{
 }
 .want-to{
     height: 100.8px;
-    width: 350px;
+    max-width: 350px;
     font-size: 20px;
 }
 .middle-footer{
