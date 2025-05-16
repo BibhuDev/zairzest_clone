@@ -845,8 +845,7 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding: 0 5%;
     box-sizing: border-box;
     z-index: 3;
 }
@@ -870,15 +869,15 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.6vw;
     font-family: 'Beyno';
     letter-spacing: 0.5rem;
-    padding-bottom: 12px;
-    padding-right: 15px;
+    padding-bottom: 14px;
+    padding-right: 14px;
+    font-size: 35.2px;
 }
 #fourO{
-    font-size: 2.4vw;
     letter-spacing: 0.5rem;
+    font-size: 35.2px;
     font-family: 'Mohave';
     color: #38CCFF;
 }
@@ -1145,6 +1144,14 @@ h2{
    }
    .bottom-footer{
     flex-direction: column;
+   }
+   #zairzest{
+    font-size: 27px;
+    padding-bottom: 12px;
+    padding-right: 15px;
+   }
+   #fourO{
+    font-size: 27px;
    }
 }
  .music-player {
@@ -1433,6 +1440,14 @@ h2{
     }
     .sidebar{
       width: 100vw;
+    }
+    #zairzest{
+      font-size: 21px;
+      padding-bottom: 8px;
+      padding-right: 10px;
+    }
+    #fourO{
+      font-size: 21px;
     }
 }
 
