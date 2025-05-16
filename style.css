@@ -1443,11 +1443,12 @@ h2{
     }
     #zairzest{
       font-size: 21px;
-      padding-bottom: 8px;
+      padding-bottom: 10px;
       padding-right: 10px;
     }
     #fourO{
       font-size: 21px;
+      padding-bottom: 1px;
     }
 }
 
